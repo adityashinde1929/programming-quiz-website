@@ -66,12 +66,12 @@ A modern, responsive web application for taking and hosting programming quizzes 
 
 ## 🔗 Developer & Social Links
 
-- **🌐 Portfolio:** [portfolio-react-app-rho.vercel.app](https://portfolio-react-app-rho.vercel.app/)
-- **💻 GitHub:** [github.com/Vishal-Sonwane-2004](https://github.com/Vishal-Sonwane-2004)
-- **☕ Buy Me a Coffee:** [buymeacoffee.com/devVishal](https://buymeacoffee.com/devVishal)
-- **📷 Instagram:** [@its.Vishal.2004](https://www.instagram.com/its.Vishal.2004)
-- **🎥 YouTube:** [ProgrammingWithVishal](https://www.youtube.com/@ProgrammingWithVishal)
-- **💼 LinkedIn:** [Vishal-sonwane-079a621ba](https://www.linkedin.com/in/Vishal-sonwane-079a621ba/)
+<!-- - **🌐 Portfolio:** [portfolio-react-app-rho.vercel.app](https://portfolio-react-app-rho.vercel.app/) -->
+- **💻 GitHub:** [github.com/adityashinde1929](https://github.com/adityashinde1929)
+<!-- - **☕ Buy Me a Coffee:** [buymeacoffee.com/devVishal](https://buymeacoffee.com/devVishal) -->
+- **📷 Instagram:** [aditya_shinde_19](https://www.instagram.com/aditya_shinde_19)
+- **💼 LinkedIn:** [adityashinde1929](https://www.linkedin.com/in/adityashinde1929/)
+
 
 ---
 
@@ -85,7 +85,7 @@ A modern, responsive web application for taking and hosting programming quizzes 
 ### 🚀 Installation & Running Locally
 
 # Clone the repository
-git clone https://github.com/Vishal-Sonwane-2004/programming-quiz-hosted.git
+git clone https://github.com/adityashinde1929/programming-quiz-website.git
 cd programming-quiz-hosted
 
 # Install live server globally if needed

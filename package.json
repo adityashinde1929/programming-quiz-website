@@ -1,7 +1,7 @@
 {
-  "name": "programming-website",
+  "name": "programming-quiz-website",
   "version": "1.0.0",
-  "description": "��#\u0000 \u0000h\u0000o\u0000s\u0000t\u0000i\u0000n\u0000g\u0000\r\u0000 \u0000",
+  "description": "Programming website project",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -9,15 +9,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Vishal2004P/hosting.git"
+    "url": "git+https://github.com/adityashinde1929/programming-quiz-website.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Aditya Shinde",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Vishal2004P/hosting/issues"
+    "url": "https://github.com/adityashinde1929/programming-quiz-website/issues"
   },
-  "homepage": "https://github.com/Vishal2004P/hosting#readme",
+  "homepage": "https://github.com/adityashinde1929/programming-quiz-website#readme",
   "dependencies": {
     "bcrypt": "^5.1.1",
     "body-parser": "^1.20.3",
