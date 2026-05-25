@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reset Password</title>
+    <link rel="stylesheet" href="forget.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <!-- Tabler Icons CDN -->
+    <link href="https://unpkg.com/@tabler/icons-webfont@latest/tabler-icons.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Logo and Header -->
+        <h2 class="logo">
+            <img src="imagee.png" alt="Logo" class="logo-image"> Hello Coderz
+        </h2>
+        <!-- Reset Password Form -->
+        <div class="form-box">
+            <form method="post" action="/forget" id="resetForm" onsubmit="return validatePasswords()">
+                <h2>Reset Password</h2>
+
+                <!-- Email Input -->
+                <div class="input-box">
+                    <span class="icon"><i class="bx bxs-envelope"></i></span>
+                    <input type="email" name="email" id="email" required aria-label="Email Address" placeholder="Enter your email">
+                    <label for="email">Email Address</label>
+                </div>
+
+                <!-- New Password Input -->
+                <div class="input-box">
+                    <span class="icon"><i class="bx bxs-lock-alt"></i></span>
+                    <input type="password" name="newpassword" id="newpassword" required aria-label="New Password" placeholder="Enter new password" oninput="checkPasswordStrength()">
+                    <label for="newpassword">New Password</label>
+                    <div id="password-strength" style="margin-top:5px;font-size:0.95em;"></div>
+                </div>
+
+                <!-- Confirm Password Input -->
+                <div class="input-box">
+                    <span class="icon"><i class="bx bxs-lock-alt"></i></span>
+                    <input type="password" name="confirmpassword" id="confirmpassword" required aria-label="Confirm Password" placeholder="Confirm your password">
+                    <label for="confirmpassword">Confirm Password</label>
+                </div>
+
+                <!-- Error Message -->
+                <div id="error-message" role="alert" style="color: red; display: none;">Passwords do not match!</div>
+
+                <!-- Submit Button -->
+                <button type="submit" class="btn">Change Password</button>
+
+                <!-- Back to Login -->
+                <div class="login-register">
+                    Remember your password? <a href="login.html" class="register-link">Log In</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        function checkPasswordStrength() {
+            const pwd = document.getElementById('newpassword').value;
+            const strengthDiv = document.getElementById('password-strength');
+            let strength = 0;
+            if (pwd.length >= 8) strength++;
+            if (/[A-Z]/.test(pwd)) strength++;
+            if (/[a-z]/.test(pwd)) strength++;
+            if (/[0-9]/.test(pwd)) strength++;
+            if (/[^A-Za-z0-9]/.test(pwd)) strength++;
+            let msg = '';
+            let color = '';
+            if (strength <= 2) { msg = 'Weak'; color = 'red'; }
+            else if (strength === 3) { msg = 'Medium'; color = 'orange'; }
+            else if (strength >= 4) { msg = 'Strong'; color = 'green'; }
+            if (pwd.length === 0) { msg = ''; }
+            strengthDiv.textContent = msg;
+            strengthDiv.style.color = color;
+        }
+
+        function validatePasswords() {
+            const newPassword = document.getElementById('newpassword').value;
+            const confirmPassword = document.getElementById('confirmpassword').value;
+            const errorMessage = document.getElementById('error-message');
+
+            // Reset error display
+            errorMessage.style.display = 'none';
+
+            // Check password length
+            if (newPassword.length < 8) {
+                errorMessage.textContent = 'Password must be at least 8 characters long.';
+                errorMessage.style.display = 'block';
+                return false;
+            }
+            // Check for uppercase, lowercase, number, special char
+            if (!/[A-Z]/.test(newPassword) || !/[a-z]/.test(newPassword) || !/[0-9]/.test(newPassword) || !/[^A-Za-z0-9]/.test(newPassword)) {
+                errorMessage.textContent = 'Password must include uppercase, lowercase, number, and special character.';
+                errorMessage.style.display = 'block';
+                return false;
+            }
+            // Check if passwords match
+            if (newPassword !== confirmPassword) {
+                errorMessage.textContent = 'Passwords do not match!';
+                errorMessage.style.display = 'block';
+                return false;
+            }
+            return true;
+        }
+    </script>
+<footer class="footer">
+        <div style="text-align:center; margin-top:30px;">
+            <a href="https://buymeacoffee.com/devVishal" target="_blank" style="color:inherit; text-decoration:none; font-size:1.1em; display:inline-flex; align-items:center; gap:6px;">
+                <i class="ti ti-coffee" style="font-size:1.5em;"></i> Buy me a coffee
+            </a>
+        </div>
+    </footer>
+</body>
+
+</html>

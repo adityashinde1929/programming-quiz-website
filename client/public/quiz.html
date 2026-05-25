@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Quiz</title>z
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="quiz.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <!-- Tabler Icons CDN -->
+    <link href="https://unpkg.com/@tabler/icons-webfont@latest/tabler-icons.min.css" rel="stylesheet">
+    <style>
+        .dark-mode {
+            background-color: black;
+            color: white;
+        }
+        .dark-mode .navbar, .dark-mode .footer {
+            background-color: #333;
+        }
+        .dark-mode .quiz-button {
+            background-color: #555;
+            color: white;
+        }
+        .dark-mode .quiz-question {
+            background-color: #222;
+            color: white;
+        }
+        .navbar .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .nav-links {
+            display: flex;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .nav-links li {
+            margin-left: 20px;
+        }
+        #menu-toggle {
+            display: none;
+            font-size: 24px;
+            cursor: pointer;
+        }
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                width: 100%;
+            }
+            .nav-links.active {
+                display: flex;
+            }
+            .navbar .container {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            #menu-toggle {
+                display: block;
+            }
+            #dark-mode-toggle {
+                margin-top: 10px;
+            }
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="dark-mode">
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">CodingNinja</a>
+            <span id="menu-toggle">&#9776;</span> <!-- Unicode character for hamburger menu -->
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="quiz.html">Quiz</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="register.html">Register</a></li>
+            </ul>
+            <button id="dark-mode-toggle">Toggle Dark Mode</button>
+        </div>
+    </nav>
+
+    <!-- Main Quiz Section -->
+    <div id="main-content">
+        <!-- About Section (Initially Hidden) -->
+        <section id="about-section" style="display: none;">
+            <h2>About</h2>
+            <p>This is Vishal Giri's website. Coop with me to explore programming quizzes on various languages like Java, C, C++, SQL, CSS, and Python.</p>
+        </section>
+
+        <!-- Quiz Container -->
+        <div class="quiz-container scrollable-content">
+            <h2 class="quiz-title">Programming Quiz</h2>
+            <h3 id="intro-text">BY Vishal Giri</h3>
+            <p id="intro-text">Which programming language would you like to quiz on?</p>
+            <div id="language-buttons" class="quiz-buttons">
+                <button class="quiz-button" onclick="startQuiz('Java')">Java</button>
+                <button class="quiz-button" onclick="startQuiz('C')">C</button>
+                <button class="quiz-button" onclick="startQuiz('C++')">C++</button>
+                <button class="quiz-button" onclick="startQuiz('Python')">Python</button>
+                <button class="quiz-button" onclick="startQuiz('DSA')">DSA</button>
+                <button class="quiz-button" onclick="startQuiz('SQL')">SQL</button>
+                <button class="quiz-button" onclick="startQuiz('javascript')">javascript</button>
+                <button class="quiz-button" onclick="startQuiz('CSS')">CSS</button>
+                <button class="quiz-button" onclick="startQuiz('RandomTechnical')">Random Technical</button>
+            </div>
+        </div>
+
+        <!-- Quiz Section -->
+        <div id="quizSection" class="quiz-question"></div>
+        <div class="progress-bar" id="progressBar"></div>
+
+        <!-- Performance Section -->
+        <div id="performanceSection" class="performance-container" style="display: none;">
+            <h3>Your Performance</h3>
+            <p id="performanceText"></p>
+            <div id="countdown"></div>
+            <button class="quiz-button" onclick="showPerformance()">Performance</button>
+        </div>
+    </div>
+
+    <!-- Fireworks Effect Container -->
+    <div id="fireworks" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: 1000;">
+        <div class="firework"></div>
+        <div class="firework"></div>
+        <div class="firework"></div>
+    </div>
+
+    <!-- Countdown Timer -->
+    <div class="countdown-timer">
+        <div class="countdown-circle">
+            <div class="countdown-number">3</div> <!-- Default time -->
+        </div>
+    </div>
+    <!-- Response Container -->
+    <div id="response"></div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="social-icons" style="margin-bottom:10px; text-align:center;">
+                <a href="https://portfolio-react-app-rho.vercel.app/" target="_blank"><i class="bx bxs-user"></i></a>
+                <a href="https://www.instagram.com/its.Vishal.2004" target="_blank"><i class="bx bxl-instagram"></i></a>
+                <a href="https://www.youtube.com/@ProgrammingWithVishal" target="_blank"><i class="bx bxl-youtube"></i></a>
+                <a href="https://www.linkedin.com/in/Vishal-sonwane-079a621ba/" target="_blank"><i class="bx bxl-linkedin"></i></a>
+                <a href="https://github.com/Vishal-Sonwane-2004" target="_blank"><i class="bx bxl-github"></i></a>
+                <a href="https://buymeacoffee.com/devVishal" target="_blank" title="Buy me a coffee"><i class="ti ti-coffee"></i></a>
+            </div>
+            <p>&copy; 2024 Hello Coderz. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="scripts.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const darkModeToggle = document.getElementById('dark-mode-toggle');
+            
+            // Check if light mode was previously enabled
+            if (localStorage.getItem('darkMode') === 'false') {
+                document.body.classList.remove('dark-mode');
+                document.querySelector('.navbar').classList.remove('dark-mode');
+                document.querySelectorAll('.nav-links a').forEach(link => link.classList.remove('dark-mode'));
+                document.querySelector('.main-content').classList.remove('dark-mode');
+            }
+
+            darkModeToggle.addEventListener('click', () => {
+                document.body.classList.toggle('dark-mode');
+                document.querySelector('.navbar').classList.toggle('dark-mode');
+                document.querySelectorAll('.nav-links a').forEach(link => link.classList.toggle('dark-mode'));
+                document.querySelector('.main-content').classList.toggle('dark-mode');
+                
+                // Save preference to localStorage
+                localStorage.setItem('darkMode', document.body.classList.contains('dark-mode') ? 'true' : 'false');
+            });
+        });
+    </script>
+
+        
+</body>
+</html>

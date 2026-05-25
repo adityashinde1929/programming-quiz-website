@@ -1,0 +1,403 @@
+/* Color Variables */
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #3498db;
+    --accent-color: #e74c3c;
+    --light-bg: #b5b5b5;
+    --dark-bg: #1a1a1a;
+    --light-text: #ffffff;
+    --dark-text: #2c3e50;
+    --navbar-light: #b7b7b7;
+    --navbar-dark: #222831;
+    --transition-speed: 0.3s;
+}
+/* Base Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: var(--light-bg);
+    color: var(--dark-text);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    transition: all var(--transition-speed) ease;
+}
+
+/* Big Button Styling */
+.big-button-container {
+    text-align: center;
+    margin: 20px 0;
+}
+/* filepath: /C:/programming-quiz-hosted/client/public/styles.css */
+body.dark-mode {
+    background-color: #181a20;
+    color: #e0e6ed;
+    transition: background 0.3s, color 0.3s;
+}
+
+.navbar.dark-mode {
+    background-color: var(--navbar-dark);
+    color: var (--light-text);
+}
+
+.nav-links a {
+    color: var(--dark-text);
+}
+
+.main-content.dark-mode {
+    background-color: var(--dark-bg);
+}
+
+.big-button {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 20px;
+    color: #fff;
+    background-color: var(--secondary-color);
+    border-radius: 25px; /* Make the button rounded */
+    text-decoration: none;
+    transition: all var(--transition-speed) ease;
+    box-shadow: 5px 5px 15px #b8b8b8, -5px -5px 15px #ffffff;
+}
+
+.big-button:hover {
+    background-color: #0056b3;
+    box-shadow: 0 0 30px rgba(0, 123, 255, 0.7);
+    transform: translateY(-3px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .main-content h1 {
+        font-size: 28px;
+    }
+
+    .main-content p {
+        font-size: 16px;
+    }
+
+    .features {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .feature {
+        margin-bottom: 20px;
+    }
+}
+
+@media (min-width: 769px) {
+    .features {
+        display: flex;
+        gap: 20px;
+    }
+}
+
+/* Container */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: var(--navbar-light);
+    color: var(--dark-text);
+    padding: 10px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: all var(--transition-speed) ease;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--dark-text);
+    text-decoration: none;
+}
+
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar .nav-links li {
+    display: inline;
+    margin-left: 20px;
+}
+
+.navbar .nav-links a {
+    color: var(--dark-text);
+    text-decoration: none;
+    font-size: 16px;
+    transition: all var(--transition-speed) ease;
+}
+
+.navbar .nav-links a:hover {
+    text-decoration: underline;
+}
+
+#menu-toggle {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Main Content */
+.main-content {
+    flex: 1;
+    padding: 40px 0;
+    background-color: var(--light-bg);
+    transition: all var(--transition-speed) ease;
+}
+
+.main-content h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.main-content p {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.main-content .container {
+    padding: 20px;
+}
+
+/* Features Section */
+.features {
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.feature {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    flex: 1 1 calc(33.333% - 40px);
+    box-sizing: border-box;
+    transition: all var(--transition-speed) ease;
+}
+
+.feature i {
+    font-size: 48px;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.feature h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.feature p {
+    font-size: 16px;
+    color: var(--dark-text);
+}
+
+@media (max-width: 768px) {
+    .feature {
+        flex: 1 1 100%;
+    }
+}
+
+/* Footer */
+.footer {
+    background-color: var(--navbar-light);
+    color: var(--dark-text);
+    text-align: center;
+    padding: 20px 0;
+    transition: all var(--transition-speed) ease;
+}
+
+body.dark-mode .navbar {
+    background-color: #23272f;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.7);
+}
+
+body.dark-mode .quiz-container {
+    background-color: #23272f;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.5);
+    border-radius: 10px;
+}
+
+body.dark-mode .quiz-button {
+    background-color: #2d72d9;
+    color: #ffffff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+    border: 1px solid #3a3f4b;
+}
+body.dark-mode .quiz-button:hover {
+    background-color: #1a4a8a;
+    color: #e0e6ed;
+    box-shadow: 0 4px 16px #1a4a8a44;
+}
+
+body.dark-mode .footer {
+    background-color: #23272f;
+    color: #e0e6ed;
+    border-top: 1px solid #23272f;
+    box-shadow: 0 -2px 8px rgba(0,0,0,0.7);
+}
+
+/* Add any other elements that need dark mode styling */
+
+/* Ensure the questions container is always displayed and text color is appropriate */
+.questions-container {
+    display: block; /* Ensure the container is always displayed */
+    color: #000; /* Ensure text color is black for visibility */
+}
+
+/* Dark mode styles for questions container */
+body.dark-mode .questions-container {
+    color: #fff; /* Ensure text color is white for visibility in dark mode */
+}
+
+/* Styles for quiz questions and options */
+.quiz-question {
+    background-color: #fff; /* White background for light mode */
+    color: #000000; /* Black text color for light mode */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+body.dark-mode .quiz-question {
+    background-color: #23272f;
+    color: #e0e6ed;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.6);
+    border: 1px solid #23272f;
+}
+
+.option {
+    background-color: #f4f7fb; /* Light background for options in light mode */
+    color: #000; /* Black text color for options in light mode */
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+body.dark-mode .option {
+    background-color: #23272f;
+    color: #e0e6ed;
+    border: 1px solid #353b48;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.3);
+    transition: background 0.2s, color 0.2s;
+}
+body.dark-mode .option:hover {
+    background-color: #2d72d9;
+    color: #fff;
+    border-color: #2d72d9;
+}
+body.dark-mode .option.selected {
+    background-color: #1a4a8a;
+    color: #fff;
+    border-color: #1a4a8a;
+}
+
+/* Styles for dark mode toggle button */
+#dark-mode-toggle {
+    padding: 8px 16px;
+    border-radius: 20px;
+    border: 2px solid var(--secondary-color);
+    background-color: transparent;
+    color: var(--secondary-color);
+    cursor: pointer;
+    transition: all var(--transition-speed) ease;
+}
+
+#dark-mode-toggle:hover {
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+/* Dark mode styles for the toggle button */
+body.dark-mode #dark-mode-toggle {
+    border-color: #e0e6ed;
+    color: #e0e6ed;
+    background: #23272f;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.3);
+}
+
+body.dark-mode #dark-mode-toggle:hover {
+    background-color: #2d72d9;
+    color: #fff;
+    border-color: #2d72d9;
+}
+
+body.dark-mode.feature {
+    color: #ffffff; /* Change text color to black in dark mode */
+    background-color: #000; /* Change background color to black in dark mode */
+    color: #fff; /* Change text color to white in dark mode */
+}
+
+body.dark-mode .feature {
+    background-color: #23272f;
+    color: #e0e6ed;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.6);
+    border: 1px solid #23272f;
+}
+
+body.dark-mode .big-button {
+    background-color: #3366cc;
+    color: #ffffff;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+    .nav-links.active {
+        display: flex;
+    }
+    .navbar .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    #menu-toggle {
+        display: block;
+    }
+    #dark-mode-toggle {
+        margin-top: 10px;
+    }
+}
+
+/* ...existing code... */
+
+.social-icons a i {
+    font-size: 3.5em !important;
+}
+
+body.dark-mode .nav-links a {
+    color: var(--light-text);
+}
+
+body.light-mode .nav-links a {
+    color: var(--dark-text);
+}
+
+/* ...existing code... */

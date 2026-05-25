@@ -1,0 +1,120 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.main-container {
+    display: flex;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+.sidebar .sidebar-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sidebar .logo {
+    width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.sidebar nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar nav ul li {
+    margin: 10px 0;
+}
+
+.sidebar nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.sidebar nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.profile-content {
+    flex: 1;
+    padding: 20px;
+}
+
+.profile-content h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.profile-details,
+.performance-section {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.profile-details h2,
+.performance-section h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.profile-details p,
+.performance-section p {
+    font-size: 16px;
+    color: #666;
+}
+
+#dark-mode-toggle {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+#dark-mode-toggle:hover {
+    background-color: #0056b3;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+body.dark-mode .sidebar {
+    background-color: #1f1f1f;
+}
+
+body.dark-mode .profile-details,
+body.dark-mode .performance-section {
+    background-color: #1f1f1f;
+    color: #e0e0e0;
+}
+
+body.dark-mode #dark-mode-toggle {
+    background-color: #0056b3;
+}
+
+body.dark-mode #dark-mode-toggle:hover {
+    background-color: #003f7f;
+}

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Page</title>
+
+    <!-- Boxicons CSS for social media icons -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="login.css">
+    <!-- Tabler Icons CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@2.43.0/tabler-icons.min.css" rel="stylesheet">
+    <style>
+      .ti { font-family: 'tabler-icons', sans-serif !important; font-style: normal; font-weight: normal; }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Register Header -->
+        <h2 class="logo">
+             Hello Coderz
+        </h2>
+
+        
+        <!-- Register Form -->
+        <div class="logreg-box">
+            <div class="form-box register">
+                <form action="/register" method="POST" id="registerForm">
+                    <h2>Sign Up</h2>
+
+                    <!-- Error Message Display -->
+                    <div id="error-message" style="color: red; display: none;"></div>
+
+                    <!-- Name Input -->
+                    <div class="input-box">
+                        <span class="icon"><i class="bx bxs-user"></i></span>
+                        <input type="text" name="username" id="name" required placeholder="Enter your name">
+                        <label for="name">Name</label>
+                    </div>
+
+                    <!-- Email Input -->
+                    <div class="input-box">
+                        <span class="icon"><i class="bx bxs-envelope"></i></span>
+                        <input type="email" name="email" id="email" required placeholder="Enter your email">
+                        <label for="email">Email</label>
+                    </div>
+
+                    <!-- Password Input with Toggle Visibility -->
+                    <div class="input-box">
+                        <span class="icon" onclick="togglePasswordVisibility()">
+                            <i class="bx bxs-lock-alt" id="lockIcon" aria-label="Toggle password visibility" role="button" tabindex="0"></i>
+                        </span>
+                        <input type="password" name="password" id="password" required placeholder="Enter your password">
+                        <label for="password">Password</label>
+                    </div>
+
+                    <!-- Confirm Password Input -->
+                    <div class="input-box">
+                        <span class="icon" onclick="togglePasswordVisibility()">
+                            <i class="bx bxs-lock-alt" id="confirmLockIcon" aria-label="Toggle password visibility" role="button" tabindex="0"></i>
+                        </span>
+                        <input type="password" name="confirmPassword" id="confirmPassword" required placeholder="Confirm your password">
+                        <label for="confirmPassword">Confirm Password</label>
+                    </div>
+
+                    <div class="remember-forget">
+                        <label><input type="checkbox" name="remember"> Remember me</label>
+                    </div>
+
+                    <button type="submit" class="btn">Sign Up</button>
+
+                    <div class="login-register">
+                        Already have an account? <a href="login.html" class="register-link">Log In</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- Social Media Links -->
+        <div class="social-icons">
+            <a href="https://portfolio-react-app-rho.vercel.app/" target="_blank"><i class="bx bxs-user"></i></a>
+            <a href="https://www.instagram.com/its.Vishal.2004" target="_blank"><i class="bx bxl-instagram"></i></a>
+            <a href="https://www.youtube.com/@ProgrammingWithVishal" target="_blank"><i class="bx bxl-youtube"></i></a>
+            <a href="https://www.linkedin.com/in/Vishal-sonwane-079a621ba/" target="_blank"><i class="bx bxl-linkedin"></i></a>
+            <a href="https://buymeacoffee.com/devVishal" target="_blank" title="Buy me a coffee"><i class="ti ti-coffee" style="font-size:1.5em;"></i></a>
+        </div>
+    </div>
+
+    <!-- Script for Toggle Password Visibility and Validation -->
+    <script>
+        function togglePasswordVisibility() {
+            const passwordField = document.getElementById('password');
+            const lockIcon = document.getElementById('lockIcon');
+            const confirmPasswordField = document.getElementById('confirmPassword');
+            const confirmLockIcon = document.getElementById('confirmLockIcon');
+
+            if (passwordField.type === 'password') {
+                passwordField.type = 'text'; // Show password
+                lockIcon.classList.remove('bxs-lock-alt');
+                lockIcon.classList.add('bxs-lock-open-alt');
+            } else {
+                passwordField.type = 'password'; // Hide password
+                lockIcon.classList.remove('bxs-lock-open-alt');
+                lockIcon.classList.add('bxs-lock-alt');
+            }
+
+            if (confirmPasswordField.type === 'password') {
+                confirmPasswordField.type = 'text'; // Show password
+                confirmLockIcon.classList.remove('bxs-lock-alt');
+                confirmLockIcon.classList.add('bxs-lock-open-alt');
+            } else {
+                confirmPasswordField.type = 'password'; // Hide password
+                confirmLockIcon.classList.remove('bxs-lock-open-alt');
+                confirmLockIcon.classList.add('bxs-lock-alt');
+            }
+        }
+
+        // Client-Side Validation
+        document.getElementById('registerForm').addEventListener('submit', function (event) {
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+            const confirmPassword = document.getElementById('confirmPassword').value;
+            const errorMessage = document.getElementById('error-message');
+
+            // Reset error message
+            errorMessage.style.display = 'none';
+            errorMessage.textContent = '';
+
+            // Simple email validation
+            if (!validateEmail(email)) {
+                errorMessage.textContent = 'Please enter a valid email address.';
+                errorMessage.style.display = 'block';
+                event.preventDefault();
+                return;
+            }
+
+            // Password length validation
+            if (password.length < 6) {
+                errorMessage.textContent = 'Password must be at least 6 characters long.';
+                errorMessage.style.display = 'block';
+                event.preventDefault();
+                return;
+            }
+
+            // Confirm Password validation
+            if (password !== confirmPassword) {
+                errorMessage.textContent = 'Passwords do not match.';
+                errorMessage.style.display = 'block';
+                event.preventDefault();
+                return;
+            }
+
+            // After successful validation, redirect to login page with a success message
+            window.location.href = '/login.html?message=You%20have%20registered%20successfully!';
+        });
+
+        // Function to validate email format
+        function validateEmail(email) {
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            return emailRegex.test(email);
+        }
+    </script>
+</body>
+
+</html>

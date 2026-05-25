@@ -1,0 +1,584 @@
+/* Color Variables */
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #3498db;
+    --accent-color: #e74c3c;
+    --light-bg: #b5b5b5;
+    --dark-bg: #1a1a1a;
+    --light-text: #ffffff;
+    --dark-text: #2c3e50;
+    --navbar-light: #b7b7b7;
+    --navbar-dark: #222831;
+    --transition-speed: 0.3s;
+}
+
+/* General Styles */
+body {
+    background: var(--light-bg);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    transition: all var(--transition-speed) ease;
+}
+
+body.dark-mode {
+    background-color: var(--dark-bg);
+    color: var(--light-text);
+}
+
+.dark-mode {
+    background-color: black;
+    color: white;
+}
+
+/* Nav Styles */
+nav {
+    background-color: var(--navbar-light);
+    color: var(--dark-text);
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    transition: all var(--transition-speed) ease;
+}
+
+body.dark-mode nav {
+    background-color: var(--navbar-dark);
+    color: var(--light-text);
+}
+
+.dark-mode .navbar, .dark-mode .footer {
+    background-color: #333;
+}
+
+nav a {
+    color: var(--dark-text);
+    text-decoration: none;
+    margin: 0 15px;
+    transition: color var(--transition-speed) ease, text-shadow var(--transition-speed) ease, transform var(--transition-speed) ease;
+    font-size: 1.2em;
+}
+
+body.dark-mode nav a {
+    color: var(--light-text);
+}
+
+nav a:hover {
+    color: var(--accent-color);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+    font-weight: bold;
+}
+
+/* Quiz Container */
+.quiz-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+    transition: all var(--transition-speed) ease;
+}
+
+body.dark-mode .quiz-container {
+    background-color: var(--dark-bg);
+    color: var(--light-text);
+}
+
+.quiz-title {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    color: var(--primary-color);
+}
+
+body.dark-mode .quiz-title {
+    color: var(--light-text);
+}
+
+/* Quiz Buttons */
+.quiz-buttons {
+    margin-bottom: 20px;
+}
+
+.quiz-button {
+    padding: 15px 30px;
+    background: linear-gradient(145deg, #2b3a3e, #f4f3f3);
+    border: none;
+    border-radius: 25px;
+    margin: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    box-shadow: 5px 5px 15px #b8b8b8, -5px -5px 15px #ffffff;
+    transition: all var(--transition-speed) ease;
+}
+
+body.dark-mode .quiz-button {
+    background-color: #555;
+    color: #fff;
+}
+
+.dark-mode .quiz-button {
+    background-color: #555;
+    color: white;
+}
+
+.quiz-button:hover {
+    box-shadow: 0 0 30px rgba(0, 123, 255, 0.7);
+    transform: translateY(-3px);
+    background-color: #e0e0e0;
+}
+
+/* Quiz Question */
+.quiz-question {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    transition: all var(--transition-speed) ease;
+}
+
+body.dark-mode .quiz-question {
+    background-color: var(--white-bg);
+    color: var(--light-text);
+}
+body.dark-mode .quiz-question {
+    background-color: var(--dark-bg);
+    box-shadow: 0 0 20px rgb(255, 255, 255);
+    color: var(--light-text);
+}
+
+body.dark-mode .quiz-question * {
+    color: var(--light-text);
+}
+
+.dark-mode .quiz-question {
+    background-color: #222;
+    color: white;
+}
+
+/* Option Button */
+.option {
+    display: block;
+    padding: 15px 20px;
+    margin: 10px auto;
+    border-radius: 25px;
+    background: linear-gradient(145deg, #ffffff, #e6e6e6);
+    color: var(--dark-text);
+    transition: all var(--transition-speed) ease;
+    text-align: center;
+    cursor: pointer;
+}
+
+/* Dark mode styles for options */
+body.dark-mode .option {
+    background: linear-gradient(145deg, #2a2a2a, #3a3a3a);
+    color: #ffffff;
+    border: 1px solid #444;
+}
+
+/* Hover states */
+.option:hover {
+    box-shadow: 0 0 30px rgba(0, 96, 199, 0.7);
+    transform: scale(1.05);
+}
+
+body.dark-mode .option:hover {
+    background: linear-gradient(145deg, #3a3a3a, #4a4a4a);
+    box-shadow: 0 0 30px rgba(0, 96, 199, 0.4);
+    color: #ffffff;
+}
+
+/* Selected option in dark mode */
+body.dark-mode .option.selected {
+    background: linear-gradient(145deg, #004a99, #0066cc);
+    color: #ffffff;
+}
+/* Continue Quiz Button */
+.continue-quiz-button {
+    padding: 12px 20px;
+    background-color: var(--secondary-color);
+    color: var(--light-text);
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all var(--transition-speed) ease;
+}
+
+.continue-quiz-button:hover {
+    background-color: #45a049;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+}
+
+/* Progress Bar */
+.progress-bar-container {
+    width: 80%;
+    background-color: #ddd;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.progress-bar {
+    width: 0;
+    height: 20px;
+    background-color: var(--secondary-color);
+    border-radius: 10px;
+    transition: width 0.4s ease;
+}
+
+/* Responsive Styles for Small Screens */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        height: auto;
+        padding: 20px;
+        margin-top: 20px;
+    }
+
+    img {
+        max-width: 50%;
+        margin: 10px auto;
+        display: block;
+        margin: 10px auto;
+    }
+
+    .content {
+        width: 100%;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .text-sci h2 {
+        font-size: 30px;
+    }
+
+    .text-sci h2 {
+        font-size: 20px;
+    }
+
+    .text-sci p {
+        font-size: 14px;
+    }
+
+    .logreg-box {
+        width: 100%;
+        padding: 20px 0;
+    }
+
+    .form-box {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .input-box {
+        width: 100%;
+        margin: 15px 0;
+    }
+
+    .btn {
+        width: 100%;
+        height: 40px;
+    }
+
+    .social-icons a i {
+        font-size: 20px;
+    }
+}
+
+/* Additional Responsive Tweaks for Mobile */
+@media (max-width: 768px) {
+    .quiz-button {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+    .quiz-container {
+        width: 95%;
+        height: auto;
+        margin: 0 auto;
+    }
+    .quiz-title {
+        font-size: 2em;
+    }
+}
+
+/* Progress Bar Styles */
+.progress-bar-container {
+    width: 80%;
+    background-color: #ddd;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.progress-bar {
+    width: 0;
+    height: 20px;
+    background-color: #00ff08;
+    border-radius: 10px;
+    transition: width 2s ease;
+}
+
+.intro-text {
+    text-align: center;
+}
+
+/* Loading Spinner */
+.spinner {
+    border: 6px solid #f3f3f3;
+    border-top: 6px solid #3498db;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+    margin: 20px auto;
+    display: none;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Error Message */
+.error-message {
+    color: red;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+}
+
+body.dark-mode .footer {
+    background-color: var(--navbar-dark);
+    color: var(--light-text);
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: var(--navbar-light);
+    color: var(--dark-text);
+    padding: 10px 0;
+    transition: all var(--transition-speed) ease;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar .nav-links li {
+    display: inline;
+}
+
+.navbar .nav-links a {
+    color: var(--dark-text);
+    text-decoration: none;
+    font-size: 16px;
+    transition: all var(--transition-speed) ease;
+}
+
+body.dark-mode .nav-links a {
+    color: var(--light-text);
+}
+
+.navbar .nav-links a:hover {
+    text-decoration: underline;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+#menu-toggle {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+    .nav-links.active {
+        display: flex;
+    }
+    .navbar .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    #menu-toggle {
+        display: block;
+    }
+    #dark-mode-toggle {
+        margin-top: 10px;
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Main Content */
+.main-content {
+    flex: 1;
+    padding: 40px 0;
+    transition: all var(--transition-speed) ease;
+}
+
+.main-content h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.main-content p {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+/* Features Section */
+.features {
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+}
+
+.feature {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    flex: 1;
+    transition: all var(--transition-speed) ease;
+}
+
+.feature i {
+    font-size: 48px;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.feature h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.feature p {
+    font-size: 16px;
+    color: var(--dark-text);
+}
+
+body.dark-mode .feature {
+    background-color: var(--dark-bg);
+    color: var(--light-text);
+}
+
+/* Footer */
+.footer {
+    background-color: var(--navbar-light);
+    color: var(--dark-text);
+    text-align: center;
+    padding: 20px 0;
+    transition: all var(--transition-speed) ease;
+}
+
+body.dark-mode .footer {
+    background-color: var(--navbar-dark);
+    color: var(--light-text);
+}
+
+/* Add any other elements that need dark mode styling */
+
+.social-icons a i {
+    font-size: 3.5em !important;
+}
+
+/* Ensure the questions container is always displayed and text color is appropriate */
+.questions-container {
+    display: block;
+    color: var(--dark-text);
+}
+
+body.dark-mode .questions-container {
+    color: var(--light-text);
+}
+
+/* Styles for quiz questions and options */
+.quiz-question {
+    background-color: #fff;
+    color: #000000;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all var(--transition-speed) ease;
+}
+
+body.dark-mode .quiz-question {
+    background-color: var(--dark-bg);
+    color: var(--light-text);
+}
+
+.option {
+    background-color: #f4f7fb;
+    color: #000;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all var(--transition-speed) ease;
+}
+
+body.dark-mode .option {
+    background-color: #555;
+    color: #fff;
+}
+
+/* Styles for dark mode toggle button */
+#dark-mode-toggle {
+    padding: 8px 16px;
+    border-radius: 20px;
+    border: 2px solid var(--secondary-color);
+    background-color: transparent;
+    color: var(--secondary-color);
+    cursor: pointer;
+    transition: all var(--transition-speed) ease;
+}
+
+#dark-mode-toggle:hover {
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+body.dark-mode #dark-mode-toggle {
+    border-color: var(--light-text);
+    color: var (--light-text);
+}
+
+body.dark-mode #dark-mode-toggle:hover {
+    background-color: var(--light-text);
+    color: var(--dark-bg);
+}

@@ -1,0 +1,105 @@
+/* General reset and styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Full-page gradient background */
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #0033ff, #04ffea); /* Gradient background */
+}
+
+/* Container styling */
+.container {
+    background: #fff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    text-align: center;
+    width: 100%;
+    max-width: 350px; /* Limit the width for both desktop and mobile */
+}
+
+/* Logo header styling */
+/* Logo styling */
+.logo {
+    font-size: 30px; /* Adjust font size of the text */
+    display: flex; /* Align logo and text horizontally */
+    align-items: center; /* Center align items vertically */
+}
+
+/* Logo image styling */
+.logo-image {
+    width: 50px; /* Decrease the logo width */
+    height: auto; /* Maintain the aspect ratio */
+    margin-right: 10px; /* Space between logo and text */
+}
+
+/* Input box styling */
+.input-box {
+    position: relative;
+    margin: 20px 0;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    font-size: 16px;
+}
+
+.input-box label {
+    position: absolute;
+    top: -8px;
+    left: 12px;
+    background: #fff;
+    padding: 0 5px;
+    font-size: 14px;
+    color: #000000;
+}
+
+.input-box .icon {
+    position: absolute;
+    top: 50%;
+    right: 12px;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: #4c00ff;
+}
+
+/* Button styling */
+.btn {
+    width: 100%;
+    background: #04ead6;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background: #556bb7;
+}
+
+/* Login/Register Link */
+.login-register {
+    margin-top: 15px; /* Adjust margin for spacing */
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+    .container {
+        width: 90%; /* Full width for mobile */
+    }
+}

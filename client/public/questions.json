@@ -1,0 +1,1986 @@
+{
+    "Java": [
+        {
+            "question": "What is the purpose of the transient keyword in Java?",
+            "options": ["To prevent a field from being serialized", "To declare a static variable", "To define an interface", "None of the above"],
+            "answer": "To prevent a field from being serialized"
+          },
+          {
+            "question": "What is the difference between method overloading and method overriding?",
+            "options": [
+              "Overloading occurs at compile time, overriding occurs at runtime",
+              "Overloading occurs at runtime, overriding occurs at compile time",
+              "Both occur at runtime",
+              "None of the above"
+            ],
+            "answer": "Overloading occurs at compile time, overriding occurs at runtime"
+          },
+          {
+            "question": "What is the use of the volatile keyword in Java?",
+            "options": [
+              "To ensure visibility of changes to variables across threads",
+              "To declare a static variable",
+              "To prevent serialization",
+              "None of the above"
+            ],
+            "answer": "To ensure visibility of changes to variables across threads"
+          },
+          {
+            "question": "What is the difference between StringBuffer and StringBuilder in Java?",
+            "options": [
+              "StringBuffer is thread-safe, StringBuilder is not",
+              "StringBuilder is thread-safe, StringBuffer is not",
+              "Both are immutable",
+              "None of the above"
+            ],
+            "answer": "StringBuffer is thread-safe, StringBuilder is not"
+          },
+          {
+            "question": "What is the purpose of a static block in Java?",
+            "options": [
+              "To initialize static variables when the class is loaded",
+              "To create an instance of a class",
+              "To define constants",
+              "None of the above"
+            ],
+            "answer": "To initialize static variables when the class is loaded"
+          },
+          {
+            "question": "What is the difference between the final and static keywords in Java?",
+            "options": [
+              "final is for constants, static is for class-level variables",
+              "Both are used for constants",
+              "static is for preventing inheritance, final is for global variables",
+              "None of the above"
+            ],
+            "answer": "final is for constants, static is for class-level variables"
+          },
+          {
+            "question": "What is the purpose of the synchronized keyword in Java?",
+            "options": [
+              "To prevent multiple threads from accessing a resource simultaneously",
+              "To define a thread",
+              "To prevent a variable from being modified",
+              "None of the above"
+            ],
+            "answer": "To prevent multiple threads from accessing a resource simultaneously"
+          },
+          {
+            "question": "What is an anonymous inner class in Java?",
+            "options": [
+              "A class without a name defined within another class",
+              "A static class",
+              "A private class",
+              "None of the above"
+            ],
+            "answer": "A class without a name defined within another class"
+          },
+          {
+            "question": "What is the difference between a shallow copy and a deep copy in Java?",
+            "options": [
+              "Shallow copy copies object references, deep copy copies actual objects",
+              "Shallow copy copies actual objects, deep copy copies references",
+              "Both copy references",
+              "None of the above"
+            ],
+            "answer": "Shallow copy copies object references, deep copy copies actual objects"
+          },
+          {
+            "question": "What is the purpose of the default method in Java interfaces?",
+            "options": [
+              "To provide a default implementation for methods",
+              "To declare abstract methods",
+              "To override methods",
+              "None of the above"
+            ],
+            "answer": "To provide a default implementation for methods"
+          },
+          {
+            "question": "What is the difference between the Collection and Collections in Java?",
+            "options": [
+              "Collection is an interface, Collections is a utility class",
+              "Collections is an interface, Collection is a utility class",
+              "Both are interfaces",
+              "Both are utility classes"
+            ],
+            "answer": "Collection is an interface, Collections is a utility class"
+          },
+          {
+            "question": "What is a functional interface in Java?",
+            "options": [
+              "An interface with exactly one abstract method",
+              "An interface with multiple abstract methods",
+              "An interface with no methods",
+              "None of the above"
+            ],
+            "answer": "An interface with exactly one abstract method"
+          },
+          {
+            "question": "What is the purpose of the try-with-resources statement in Java?",
+            "options": [
+              "To automatically close resources like files or sockets",
+              "To define multiple catch blocks",
+              "To catch runtime exceptions",
+              "None of the above"
+            ],
+            "answer": "To automatically close resources like files or sockets"
+          },
+          {
+            "question": "What is a marker interface in Java?",
+            "options": [
+              "An interface with no methods or fields",
+              "An interface with only static methods",
+              "An interface with only private methods",
+              "None of the above"
+            ],
+            "answer": "An interface with no methods or fields"
+          },
+          {
+            "question": "What is the use of the enum keyword in Java?",
+            "options": [
+              "To define a set of named constants",
+              "To create a thread",
+              "To implement an interface",
+              "None of the above"
+            ],
+            "answer": "To define a set of named constants"
+          },
+        {
+            "question": "What is Java?",
+            "options": ["Programming Language", "Fruit", "Car", "None of the above"],
+            "answer": "Programming Language"
+        },
+        {
+            "question": "Which keyword is used to define a class in Java?",
+            "options": ["class", "define", "function", "object"],
+            "answer": "class"
+        },
+        {
+            "question": "What is the default value of a boolean variable in Java?",
+            "options": ["true", "false", "0", "undefined"],
+            "answer": "false"
+        },
+        {
+            "question": "What is encapsulation in Java?",
+            "options": ["Hiding implementation details", "Inheritance", "Method overloading", "Memory management"],
+            "answer": "Hiding implementation details"
+          },
+          {
+            "question": "Which keyword is used for inheritance in Java?",
+            "options": ["extends", "implements", "inherits", "super"],
+            "answer": "extends"
+          },
+          {
+            "question": "What is polymorphism in Java?",
+            "options": ["Ability of a method to do different things", "Hiding implementation details", "Creating objects", "None of the above"],
+            "answer": "Ability of a method to do different things"
+          },
+          {
+            "question": "What is method overloading in Java?",
+            "options": ["Having multiple methods with the same name but different parameters", "Using the same method in child class", "Calling methods within methods", "None of the above"],
+            "answer": "Having multiple methods with the same name but different parameters"
+          },
+          {
+            "question": "Which keyword is used to call the parent class constructor in Java?",
+            "options": ["super", "this", "parent", "base"],
+            "answer": "super"
+          },
+          {
+            "question": "What is an abstract class in Java?",
+            "options": ["A class that cannot be instantiated", "A class with only static methods", "A class with no constructors", "None of the above"],
+            "answer": "A class that cannot be instantiated"
+          },
+          {
+            "question": "What is an interface in Java?",
+            "options": ["A blueprint for a class", "An instance of a class", "A concrete implementation", "None of the above"],
+            "answer": "A blueprint for a class"
+          },
+          {
+            "question": "What is the difference between String and StringBuilder in Java?",
+            "options": ["String is immutable, StringBuilder is mutable", "Both are mutable", "StringBuilder is immutable, String is mutable", "None of the above"],
+            "answer": "String is immutable, StringBuilder is mutable"
+          },
+          {
+            "question": "What is the purpose of the final keyword in Java?",
+            "options": ["To declare constants", "To restrict inheritance", "To prevent method overriding", "All of the above"],
+            "answer": "All of the above"
+          },
+          {
+            "question": "What is method overriding in Java?",
+            "options": ["Redefining a parent class method in a child class", "Using multiple methods with the same name", "Calling a method within itself", "None of the above"],
+            "answer": "Redefining a parent class method in a child class"
+          },
+          {
+            "question": "What does the keyword 'this' refer to in Java?",
+            "options": ["The current object", "The parent class", "A static context", "A local variable"],
+            "answer": "The current object"
+          },
+          {
+            "question": "What is the purpose of the static keyword in Java?",
+            "options": ["To declare a class-level variable or method", "To make a method immutable", "To create an instance", "None of the above"],
+            "answer": "To declare a class-level variable or method"
+          },
+          {
+            "question": "What is the difference between an abstract class and an interface in Java?",
+            "options": ["Abstract class can have concrete methods, interface cannot", "Interface can have constructors, abstract class cannot", "Both can be instantiated", "None of the above"],
+            "answer": "Abstract class can have concrete methods, interface cannot"
+          },
+          {
+            "question": "What is a constructor in Java?",
+            "options": ["A special method used to initialize objects", "A static block", "A method with no return type", "None of the above"],
+            "answer": "A special method used to initialize objects"
+          },
+          {
+            "question": "What is the default constructor in Java?",
+            "options": ["A no-argument constructor provided by Java", "A constructor with arguments", "A private constructor", "None of the above"],
+            "answer": "A no-argument constructor provided by Java"
+          },
+          {
+            "question": "What is the difference between public and private access modifiers in Java?",
+            "options": ["Public is accessible everywhere, private is restricted to the class", "Public is restricted to the package, private is accessible everywhere", "Both are the same", "None of the above"],
+            "answer": "Public is accessible everywhere, private is restricted to the class"
+          },
+          {
+            "question": "What is inheritance in Java?",
+            "options": ["The process of acquiring properties and behavior from a parent class", "Creating objects", "Overloading methods", "None of the above"],
+            "answer": "The process of acquiring properties and behavior from a parent class"
+          },
+          {
+            "question": "Which keyword is used to implement an interface in Java?",
+            "options": ["implements", "extends", "interface", "None of the above"],
+            "answer": "implements"
+          },
+          {
+            "question": "What is the difference between '==' and 'equals()' in Java?",
+            "options": ["'==' compares references, 'equals()' compares values", "Both compare references", "Both compare values", "None of the above"],
+            "answer": "'==' compares references, 'equals()' compares values"
+          },
+          {
+            "question": "What is the purpose of the super keyword in Java?",
+            "options": ["To refer to the immediate parent class object", "To create a new object", "To refer to the current object", "None of the above"],
+            "answer": "To refer to the immediate parent class object"
+          },
+          {
+            "question": "What is a package in Java?",
+            "options": ["A namespace that organizes classes and interfaces", "A type of variable", "A reserved keyword", "None of the above"],
+            "answer": "A namespace that organizes classes and interfaces"
+          },
+          {
+            "question": "What is the use of the instanceof operator in Java?",
+            "options": ["To test whether an object is an instance of a specific class", "To create objects", "To define inheritance", "None of the above"],
+            "answer": "To test whether an object is an instance of a specific class"
+          },
+          {
+            "question": "What is the main method in Java?",
+            "options": ["The entry point of a Java application", "A constructor", "A static block", "None of the above"],
+            "answer": "The entry point of a Java application"
+          },
+          {
+            "question": "What is the purpose of the break statement in Java?",
+            "options": ["To exit a loop or switch statement", "To end a program", "To skip a loop iteration", "None of the above"],
+            "answer": "To exit a loop or switch statement"
+          },
+        {
+            "question": "Which method is used to start a thread in Java?",
+            "options": ["run()", "start()", "execute()", "init()"],
+            "answer": "start()"
+        },
+        {
+            "question": "What is the purpose of the 'static' keyword in Java?",
+            "options": ["To define a constant", "To create an instance of a class", "To make a method or variable associated with the class", "To initialize variables"],
+            "answer": "To make a method or variable associated with the class"
+        },
+        {
+            "question": "What is an interface in Java?",
+            "options": ["A class", "A collection of methods", "A way to define constants", "A way to inherit functionality from multiple classes"],
+            "answer": "A collection of methods"
+        },
+        {
+            "question": "Which collection class is part of the Java Collections Framework?",
+            "options": ["ArrayList", "HashTable", "LinkedList", "All of the above"],
+            "answer": "All of the above"
+        },
+        {
+            "question": "Which of the following is used to handle exceptions in Java?",
+            "options": ["throw", "throws", "try-catch", "catch-except"],
+            "answer": "try-catch"
+        },
+        {
+            "question": "What is the difference between '==' and 'equals()' in Java?",
+            "options": ["'==' compares object references, equals() compares object values", "'==' compares object values, equals() compares object references", "'==' and equals() are the same", "'==' checks if objects are equal in memory"],
+            "answer": "'==' compares object references, equals() compares object values"
+        },
+        {
+            "question": "Which of the following is used for dynamic method dispatch in Java?",
+            "options": ["Method overloading", "Method overriding", "Abstract classes", "Interfaces"],
+            "answer": "Method overriding"
+        },
+        {
+            "question": "What does the 'final' keyword do in Java?",
+            "options": ["Makes a variable constant", "Prevents method overriding", "Prevents inheritance", "All of the above"],
+            "answer": "All of the above"
+        },
+        {
+            "question": "What is the return type of the main method in Java?",
+            "options": ["void", "String", "int", "boolean"],
+            "answer": "void"
+        },
+        {
+            "question": "Which of the following is a valid data type in Java?",
+            "options": ["int", "float", "char", "All of the above"],
+            "answer": "All of the above"
+        },
+        {
+            "question": "What is the size of a byte in Java?",
+            "options": ["8 bits", "16 bits", "32 bits", "64 bits"],
+            "answer": "8 bits"
+        },
+        {
+            "question": "Which operator is used for concatenation in Java?",
+            "options": ["+", "-", "*", "/"],
+            "answer": "+"
+        },
+        {
+            "question": "Which of the following is not a primitive data type in Java?",
+            "options": ["int", "String", "float", "char"],
+            "answer": "String"
+        },
+        {
+            "question": "What is the default value of an instance variable in Java?",
+            "options": ["null", "0", "false", "undefined"],
+            "answer": "null"
+        },
+        {
+            "question": "Which method is used to obtain the length of an array in Java?",
+            "options": ["size()", "length()", "length[]", "getSize()"],
+            "answer": "length()"
+        },
+        {
+            "question": "What does the 'super' keyword do in Java?",
+            "options": ["Refers to the superclass", "Refers to the current class", "Used to call methods of the current class", "None of the above"],
+            "answer": "Refers to the superclass"
+        },
+        {
+            "question": "Which of the following is a valid access modifier in Java?",
+            "options": ["public", "private", "protected", "All of the above"],
+            "answer": "All of the above"
+        },
+        {
+            "question": "What is the purpose of the 'this' keyword in Java?",
+            "options": ["Refers to the current object", "Refers to the superclass", "Used to access static variables", "None of the above"],
+            "answer": "Refers to the current object"
+        },
+        {
+            "question": "Which of the following is used to create a new instance of a class in Java?",
+            "options": ["new", "create", "init", "instance"],
+            "answer": "new"
+        },
+        {
+            "question": "What is the default value of an integer variable in Java?",
+            "options": ["0", "null", "undefined", "false"],
+            "answer": "0"
+        },
+        {
+            "question": "Which collection interface does the 'HashMap' class implement?",
+            "options": ["Map", "List", "Set", "Queue"],
+            "answer": "Map"
+        },
+        {
+            "question": "Which of the following is used to declare a constant in Java?",
+            "options": ["final", "const", "immutable", "constant"],
+            "answer": "final"
+        },
+        {
+            "question": "What is the purpose of the 'continue' statement in Java?",
+            "options": ["To skip the current iteration of a loop", "To end a program", "To terminate a loop", "None of the above"],
+            "answer": "To skip the current iteration of a loop"
+          },
+          {
+            "question": "What is the difference between an array and an ArrayList in Java?",
+            "options": ["Array is fixed-size, ArrayList is dynamic-size", "Array is dynamic-size, ArrayList is fixed-size", "Both are fixed-size", "Both are dynamic-size"],
+            "answer": "Array is fixed-size, ArrayList is dynamic-size"
+          },
+          {
+            "question": "What is a Java thread?",
+            "options": ["A lightweight process", "A function", "A class", "None of the above"],
+            "answer": "A lightweight process"
+          },
+          {
+            "question": "What is synchronization in Java?",
+            "options": ["A process of controlling access to shared resources", "A process of creating threads", "A type of loop", "None of the above"],
+            "answer": "A process of controlling access to shared resources"
+          },
+          {
+            "question": "What is the default value of an int variable in Java?",
+            "options": ["0", "null", "undefined", "1"],
+            "answer": "0"
+          },
+          {
+            "question": "What is garbage collection in Java?",
+            "options": ["Automatic memory management", "Manual memory allocation", "Loop optimization", "None of the above"],
+            "answer": "Automatic memory management"
+          },
+          {
+            "question": "What does JVM stand for in Java?",
+            "options": ["Java Virtual Machine", "Java Variable Manager", "Java Version Module", "None of the above"],
+            "answer": "Java Virtual Machine"
+          },
+          {
+            "question": "What is the purpose of the transient keyword in Java?",
+            "options": ["To prevent serialization of a field", "To declare a method", "To define a class", "None of the above"],
+            "answer": "To prevent serialization of a field"
+          },
+          {
+            "question": "What is a try-catch block in Java?",
+            "options": ["A way to handle exceptions", "A way to declare variables", "A type of loop", "None of the above"],
+            "answer": "A way to handle exceptions"
+          },
+          {
+            "question": "What is the purpose of the finally block in Java?",
+            "options": ["To execute code regardless of exceptions", "To declare constants", "To define classes", "None of the above"],
+            "answer": "To execute code regardless of exceptions"
+          },
+          {
+            "question": "What is the difference between the Comparable and Comparator interfaces in Java?",
+            "options": ["Comparable is used for natural ordering, Comparator is used for custom ordering", "Both are the same", "Comparable is for custom ordering, Comparator is for natural ordering", "None of the above"],
+            "answer": "Comparable is used for natural ordering, Comparator is used for custom ordering"
+          },
+          {
+            "question": "What is the purpose of the volatile keyword in Java?",
+            "options": ["To ensure visibility of changes to variables across threads", "To define static variables", "To declare constants", "None of the above"],
+            "answer": "To ensure visibility of changes to variables across threads"
+          },
+          {
+            "question": "What is a lambda expression in Java?",
+            "options": ["A concise way to represent anonymous functions", "A type of loop", "A class constructor", "None of the above"],
+            "answer": "A concise way to represent anonymous functions"
+          },
+          {
+            "question": "What is the purpose of the default keyword in Java 8 interfaces?",
+            "options": ["To define methods with default implementation", "To create constants", "To override methods", "None of the above"],
+            "answer": "To define methods with default implementation"
+          },
+          {
+            "question": "What is the purpose of the instanceof operator in Java?",
+            "options": ["To test whether an object is an instance of a specific class", "To compare two objects", "To define inheritance", "None of the above"],
+            "answer": "To test whether an object is an instance of a specific class"
+          },
+          {
+            "question": "What is the difference between final and finally in Java?",
+            "options": ["final is a keyword, finally is a block for exception handling", "Both are used for exception handling", "Both are keywords", "None of the above"],
+            "answer": "final is a keyword, finally is a block for exception handling"
+          },
+          {
+            "question": "What is autoboxing in Java?",
+            "options": ["Converting a primitive type to its wrapper class", "Converting a wrapper class to a primitive type", "A type of loop", "None of the above"],
+            "answer": "Converting a primitive type to its wrapper class"
+          },
+          {
+            "question": "What is the purpose of the @Override annotation in Java?",
+            "options": ["To indicate that a method overrides a superclass method", "To declare a new method", "To create an interface", "None of the above"],
+            "answer": "To indicate that a method overrides a superclass method"
+          },
+          {
+            "question": "What is the purpose of the this() constructor call in Java?",
+            "options": ["To call another constructor in the same class", "To call a parent class constructor", "To create a new object", "None of the above"],
+            "answer": "To call another constructor in the same class"
+          },
+          {
+            "question": "What is the difference between throw and throws in Java?",
+            "options": ["throw is used to explicitly throw an exception, throws is used to declare exceptions in a method", "Both are used to declare exceptions", "Both are used to throw exceptions", "None of the above"],
+            "answer": "throw is used to explicitly throw an exception, throws is used to declare exceptions in a method"
+          },
+        {
+            "question": "Which method in Java is used to compare two strings?",
+            "options": ["compareTo()", "equals()", "compare()", "isEqual()"],
+            "answer": "equals()"
+        },
+        {
+            "question": "What is an abstract class in Java?",
+            "options": ["A class that can be instantiated", "A class that cannot be instantiated", "A class that only contains static methods", "A class that contains only constructors"],
+            "answer": "A class that cannot be instantiated"
+        },
+        {
+            "question": "What is the output of the following code? int[] arr = {1, 2, 3}; System.out.println(arr[1]);",
+            "options": ["1", "2", "3", "Error"],
+            "answer": "2"
+        },
+        {
+            "question": "Which operator is used to create a new instance of an object in Java?",
+            "options": ["new", "create", "instantiate", "object"],
+            "answer": "new"
+        },{
+            "question": "What is the difference between HashMap and ConcurrentHashMap in Java?",
+            "options": [
+              "HashMap is not thread-safe, ConcurrentHashMap is thread-safe",
+              "HashMap is faster for multi-threading, ConcurrentHashMap is slower",
+              "Both are thread-safe",
+              "None of the above"
+            ],
+            "answer": "HashMap is not thread-safe, ConcurrentHashMap is thread-safe"
+          },
+          {
+            "question": "What is the purpose of the Optional class in Java 8?",
+            "options": [
+              "To represent a value that might be null",
+              "To define a functional interface",
+              "To handle exceptions",
+              "None of the above"
+            ],
+            "answer": "To represent a value that might be null"
+          },
+          {
+            "question": "What is a lambda expression in Java?",
+            "options": [
+              "A concise way to represent a function",
+              "A method in an interface",
+              "A way to create anonymous classes",
+              "None of the above"
+            ],
+            "answer": "A concise way to represent a function"
+          },
+          {
+            "question": "What is the difference between a WeakReference and a SoftReference in Java?",
+            "options": [
+              "WeakReference is cleared at the next garbage collection, SoftReference is cleared only when memory is low",
+              "Both are cleared at the same time",
+              "SoftReference is weaker than WeakReference",
+              "None of the above"
+            ],
+            "answer": "WeakReference is cleared at the next garbage collection, SoftReference is cleared only when memory is low"
+          },
+          {
+            "question": "What is the difference between stack and heap memory in Java?",
+            "options": [
+              "Stack is used for method execution, heap is used for object storage",
+              "Heap is used for method execution, stack is used for object storage",
+              "Both are used for object storage",
+              "None of the above"
+            ],
+            "answer": "Stack is used for method execution, heap is used for object storage"
+          },
+          {
+            "question": "What is the purpose of the synchronized block in Java?",
+            "options": [
+              "To limit synchronization to a specific block of code",
+              "To lock the entire class",
+              "To make a method static",
+              "None of the above"
+            ],
+            "answer": "To limit synchronization to a specific block of code"
+          },
+          {
+            "question": "What is a CompletableFuture in Java?",
+            "options": [
+              "A class for asynchronous programming",
+              "A class for managing threads",
+              "A method for handling exceptions",
+              "None of the above"
+            ],
+            "answer": "A class for asynchronous programming"
+          },
+          {
+            "question": "What is the role of the ForkJoinPool in Java?",
+            "options": [
+              "To manage parallel tasks efficiently",
+              "To create threads",
+              "To manage I/O operations",
+              "None of the above"
+            ],
+            "answer": "To manage parallel tasks efficiently"
+          },
+          {
+            "question": "What is the difference between checked and unchecked exceptions in Java?",
+            "options": [
+              "Checked exceptions must be declared or handled, unchecked exceptions do not",
+              "Unchecked exceptions must be declared, checked exceptions do not",
+              "Both must be handled explicitly",
+              "None of the above"
+            ],
+            "answer": "Checked exceptions must be declared or handled, unchecked exceptions do not"
+          },
+          {
+            "question": "What is a daemon thread in Java?",
+            "options": [
+              "A background thread that runs until all user threads finish",
+              "A thread that has higher priority",
+              "A thread that runs in a separate process",
+              "None of the above"
+            ],
+            "answer": "A background thread that runs until all user threads finish"
+          },
+          {
+            "question": "What is the purpose of the Stream API in Java?",
+            "options": [
+              "To process collections of data in a functional style",
+              "To handle I/O operations",
+              "To manage concurrency",
+              "None of the above"
+            ],
+            "answer": "To process collections of data in a functional style"
+          },
+          {
+            "question": "What is the difference between Callable and Runnable in Java?",
+            "options": [
+              "Callable can return a value and throw exceptions, Runnable cannot",
+              "Runnable can return a value, Callable cannot",
+              "Both can return values",
+              "None of the above"
+            ],
+            "answer": "Callable can return a value and throw exceptions, Runnable cannot"
+          },
+          {
+            "question": "What is the purpose of the ReentrantLock class in Java?",
+            "options": [
+              "To provide explicit locking with more control than synchronized",
+              "To manage thread pools",
+              "To create new threads",
+              "None of the above"
+            ],
+            "answer": "To provide explicit locking with more control than synchronized"
+          },
+          {
+            "question": "What is the difference between a synchronized method and a synchronized block?",
+            "options": [
+              "Synchronized blocks offer more granular control than synchronized methods",
+              "Synchronized methods are faster than synchronized blocks",
+              "Both are identical",
+              "None of the above"
+            ],
+            "answer": "Synchronized blocks offer more granular control than synchronized methods"
+          },
+          {
+            "question": "What is the purpose of the Executors framework in Java?",
+            "options": [
+              "To manage thread pools",
+              "To handle exceptions",
+              "To define custom thread priorities",
+              "None of the above"
+            ],
+            "answer": "To manage thread pools"
+          },
+          {
+            "question": "What is a default method in an interface in Java 8?",
+            "options": [
+              "A method with a default implementation in an interface",
+              "An abstract method in an interface",
+              "A method that cannot be overridden",
+              "None of the above"
+            ],
+            "answer": "A method with a default implementation in an interface"
+          },
+          {
+            "question": "What is the purpose of the parallelStream() method in Java?",
+            "options": [
+              "To process streams in parallel using multiple threads",
+              "To process streams sequentially",
+              "To convert data into streams",
+              "None of the above"
+            ],
+            "answer": "To process streams in parallel using multiple threads"
+          },
+          {
+            "question": "What is the difference between HashSet and TreeSet in Java?",
+            "options": [
+              "HashSet does not maintain order, TreeSet maintains a sorted order",
+              "TreeSet does not maintain order, HashSet maintains insertion order",
+              "Both maintain a sorted order",
+              "None of the above"
+            ],
+            "answer": "HashSet does not maintain order, TreeSet maintains a sorted order"
+          },
+          {
+            "question": "What is the purpose of the @FunctionalInterface annotation in Java?",
+            "options": [
+              "To indicate an interface with exactly one abstract method",
+              "To define a marker interface",
+              "To ensure an interface is abstract",
+              "None of the above"
+            ],
+            "answer": "To indicate an interface with exactly one abstract method"
+          },{
+            "question": "What is the main advantage of using the var keyword in Java 10?",
+            "options": [
+              "Improved code readability",
+              "Reduced verbosity in type declarations",
+              "Faster runtime performance",
+              "None of the above"
+            ],
+            "answer": "Reduced verbosity in type declarations"
+          },
+          {
+            "question": "What is the difference between finalize() and try-with-resources in Java?",
+            "options": [
+              "try-with-resources is preferred for closing resources, finalize() is unreliable",
+              "finalize() closes resources faster than try-with-resources",
+              "Both are identical in functionality",
+              "None of the above"
+            ],
+            "answer": "try-with-resources is preferred for closing resources, finalize() is unreliable"
+          },
+          {
+            "question": "What is the purpose of the volatile keyword in Java?",
+            "options": [
+              "To ensure visibility of changes to variables across threads",
+              "To synchronize a block of code",
+              "To make variables immutable",
+              "None of the above"
+            ],
+            "answer": "To ensure visibility of changes to variables across threads"
+          },
+          {
+            "question": "What is the difference between Comparator and Comparable in Java?",
+            "options": [
+              "Comparable is used for natural ordering, Comparator is used for custom ordering",
+              "Comparator is used for natural ordering, Comparable is used for custom ordering",
+              "Both are identical in usage",
+              "None of the above"
+            ],
+            "answer": "Comparable is used for natural ordering, Comparator is used for custom ordering"
+          },
+          {
+            "question": "What is the purpose of the @Override annotation in Java?",
+            "options": [
+              "To indicate that a method is overriding a superclass method",
+              "To prevent a method from being overridden",
+              "To mark a method as final",
+              "None of the above"
+            ],
+            "answer": "To indicate that a method is overriding a superclass method"
+          },
+          {
+            "question": "What is the significance of the try-with-resources statement in Java?",
+            "options": [
+              "It automatically closes resources after execution",
+              "It reduces the need for synchronized blocks",
+              "It ensures faster compilation",
+              "None of the above"
+            ],
+            "answer": "It automatically closes resources after execution"
+          },
+          {
+            "question": "What is the purpose of the synchronized keyword in Java?",
+            "options": [
+              "To prevent concurrent modification of shared resources",
+              "To make a method immutable",
+              "To enable thread creation",
+              "None of the above"
+            ],
+            "answer": "To prevent concurrent modification of shared resources"
+          },
+          {
+            "question": "What is the difference between deep copy and shallow copy in Java?",
+            "options": [
+              "Deep copy duplicates objects, shallow copy copies references",
+              "Shallow copy duplicates objects, deep copy copies references",
+              "Both are identical in functionality",
+              "None of the above"
+            ],
+            "answer": "Deep copy duplicates objects, shallow copy copies references"
+          },
+          {
+            "question": "What is the purpose of the ConcurrentHashMap class in Java?",
+            "options": [
+              "To allow thread-safe access to a hash map",
+              "To create a synchronized array",
+              "To improve garbage collection",
+              "None of the above"
+            ],
+            "answer": "To allow thread-safe access to a hash map"
+          },
+          {
+            "question": "What is the difference between a final variable and a constant in Java?",
+            "options": [
+              "A constant is a final variable initialized with a value that cannot be changed",
+              "A final variable can be re-assigned, a constant cannot",
+              "Both are identical in Java",
+              "None of the above"
+            ],
+            "answer": "A constant is a final variable initialized with a value that cannot be changed"
+          },
+          {
+            "question": "What is the purpose of the EnumSet in Java?",
+            "options": [
+              "To create a high-performance set for enumerations",
+              "To manage exceptions",
+              "To define immutable sets",
+              "None of the above"
+            ],
+            "answer": "To create a high-performance set for enumerations"
+          },
+          {
+            "question": "What is the difference between the StringBuffer and StringBuilder classes?",
+            "options": [
+              "StringBuffer is thread-safe, StringBuilder is not",
+              "StringBuilder is immutable, StringBuffer is not",
+              "Both are immutable",
+              "None of the above"
+            ],
+            "answer": "StringBuffer is thread-safe, StringBuilder is not"
+          },
+          {
+            "question": "What is the main feature of Java’s modular system introduced in Java 9?",
+            "options": [
+              "To allow splitting the JDK into smaller modules",
+              "To improve memory management",
+              "To enhance garbage collection",
+              "None of the above"
+            ],
+            "answer": "To allow splitting the JDK into smaller modules"
+          },
+          {
+            "question": "What is the difference between JIT and JVM in Java?",
+            "options": [
+              "JVM runs Java bytecode, JIT compiles bytecode into native code for better performance",
+              "JVM compiles Java code, JIT interprets it",
+              "Both are part of the compiler",
+              "None of the above"
+            ],
+            "answer": "JVM runs Java bytecode, JIT compiles bytecode into native code for better performance"
+          },
+          {
+            "question": "What is the purpose of the Garbage Collector in Java?",
+            "options": [
+              "To reclaim unused memory by destroying unreachable objects",
+              "To optimize CPU usage",
+              "To handle thread execution",
+              "None of the above"
+            ],
+            "answer": "To reclaim unused memory by destroying unreachable objects"
+          },
+          {
+            "question": "What is the difference between final, finally, and finalize in Java?",
+            "options": [
+              "final is a keyword, finally is a block, finalize is a method",
+              "finally is a method, finalize is a keyword, final is a block",
+              "All three are blocks",
+              "None of the above"
+            ],
+            "answer": "final is a keyword, finally is a block, finalize is a method"
+          },
+          {
+            "question": "What is a marker interface in Java?",
+            "options": [
+              "An interface with no methods or fields",
+              "An interface used for multi-threading",
+              "An interface that cannot be implemented",
+              "None of the above"
+            ],
+            "answer": "An interface with no methods or fields"
+          },
+          {
+            "question": "What is the purpose of the transient keyword in Java?",
+            "options": [
+              "To prevent a field from being serialized",
+              "To make a method synchronized",
+              "To declare a constant",
+              "None of the above"
+            ],
+            "answer": "To prevent a field from being serialized"
+          },
+          {
+            "question": "What is the difference between an abstract class and a concrete class in Java?",
+            "options": [
+              "Abstract class cannot be instantiated, concrete class can be instantiated",
+              "Concrete class cannot have methods, abstract class can",
+              "Both are the same",
+              "None of the above"
+            ],
+            "answer": "Abstract class cannot be instantiated, concrete class can be instantiated"
+          },
+          {
+            "question": "What is the purpose of the TreeMap in Java?",
+            "options": [
+              "To store key-value pairs in sorted order",
+              "To store unordered collections",
+              "To manage concurrency",
+              "None of the above"
+            ],
+            "answer": "To store key-value pairs in sorted order"
+          },
+          {
+            "question": "What is the difference between a static method and an instance method in Java?",
+            "options": [
+              "Static methods belong to the class, instance methods belong to objects",
+              "Instance methods are faster than static methods",
+              "Both are identical",
+              "None of the above"
+            ],
+            "answer": "Static methods belong to the class, instance methods belong to objects"
+          },
+          {
+            "question": "What is the purpose of the @FunctionalInterface annotation in Java?",
+            "options": [
+              "To indicate an interface with a single abstract method",
+              "To define a functional interface",
+              "To create a lambda expression",
+              "None of the above"
+            ],
+            "answer": "To indicate an interface with a single abstract method"
+          },
+          {
+            "question": "What is the difference between a class and an object in Java?",
+            "options": [
+              "A class is a blueprint, an object is an instance of a class",
+              "A class is an instance of an object, an object is a blueprint",
+              "Both are identical",
+              "None of the above"
+            ],
+            "answer": "A class is a blueprint, an object is an instance of a class"
+          },  
+          {
+            "question": "What is the purpose of the @Override annotation in Java?",
+            "options": [
+              "To indicate that a method is overriding a superclass method",
+              "To prevent a method from being overridden",
+              "To mark a method as final",
+              "None of the above"
+            ],
+            "answer": "To indicate that a method is overriding a superclass method"
+          },
+          {
+            "question": "What is the difference between a constructor and a method in Java?",
+            "options": [
+              "A constructor is used to create objects, a method is used to perform actions",
+              "A method is used to create objects, a constructor is used to perform actions",
+              "Both are identical",
+              "None of the above"
+            ],
+            "answer": "A constructor is used to create objects, a method is used to perform actions"
+          },
+          {
+            "question": "What is the purpose of the super keyword in Java?",
+            "options": [
+              "To refer to the superclass",
+              "To refer to the current class",
+              "To create a new object",
+              "None of the above"
+            ],
+            "answer": "To refer to the superclass"
+          },
+          {
+            "question": "What is the difference between a while loop and a do-while loop in Java?",
+            "options": [
+              "A while loop checks the condition before executing, a do-while loop checks after",
+              "A do-while loop checks the condition before executing, a while loop checks after",
+              "Both are identical",
+              "None of the above"
+            ],
+            "answer": "A while loop checks the condition before executing, a do-while loop checks after"
+          }
+    ],
+    "Python": [
+        {
+            "question": "Which of the following is used to define a function in Python?",
+            "options": ["def", "function", "create", "define"],
+            "answer": "def"
+        },
+        {
+            "question": "What is the output of the following Python code? print(type(3))",
+            "options": ["<class 'int'>", "<type 'int'>", "int", "3"],
+            "answer": "<class 'int'>"
+        },
+        {
+            "question": "Which of the following is used to import a module in Python?",
+            "options": ["import module", "use module", "include module", "require module"],
+            "answer": "import module"
+        },
+        {
+            "question": "Which function is used to get the length of a list in Python?",
+            "options": ["len()", "length()", "size()", "count()"],
+            "answer": "len()"
+        },
+        {
+            "question": "Which of the following methods can be used to remove an element from a list in Python?",
+            "options": ["remove()", "delete()", "pop()", "All of the above"],
+            "answer": "All of the above"
+        },
+        {
+            "question": "How do you create a dictionary in Python?",
+            "options": ["d = {}", "d = []", "d = ()", "d = dict()"],
+            "answer": "d = {}"
+        },
+        {
+            "question": "What is the default value of a variable in Python?",
+            "options": ["None", "0", "undefined", "empty string"],
+            "answer": "None"
+        },
+        {
+            "question": "Which operator is used to concatenate strings in Python?",
+            "options": ["+", "-", "*", "/"],
+            "answer": "+"
+        },
+        {
+            "question": "What is the output of the following Python code? print(2 ** 3)",
+            "options": ["8", "6", "5", "3"],
+            "answer": "8"
+        },
+        
+        {
+            "question": "Which of the following is used to define a class in Python?",
+            "options": ["class", "object", "define", "function"],
+            "answer": "class"
+        },
+        {
+            "question": "What is the correct syntax to access a value from a dictionary in Python?",
+            "options": ["dict[key]", "dict.key", "dict{key}", "dict->key"],
+            "answer": "dict[key]"
+        },
+        {
+            "question": "Which function is used to return the type of an object in Python?",
+            "options": ["type()", "object()", "kind()", "typeof()"],
+            "answer": "type()"
+        },
+        {
+            "question": "What will the following Python code print? print('Hello, World!'.upper())",
+            "options": ["HELLO, WORLD!", "hello, world!", "Hello, World!", "None of the above"],
+            "answer": "HELLO, WORLD!"
+        },
+        {
+            "question": "Which of the following is used to handle exceptions in Python?",
+            "options": ["try-except", "throw-catch", "try-finally", "None of the above"],
+            "answer": "try-except"
+        },
+        {
+            "question": "Which of the following is used to open a file in Python?",
+            "options": ["open()", "file()", "openfile()", "read()"],
+            "answer": "open()"
+        },
+        {
+            "question": "Which method can be used to add an item to the end of a list in Python?",
+            "options": ["append()", "insert()", "add()", "extend()"],
+            "answer": "append()"
+        },
+        {
+            "question": "Which of the following is a valid list comprehension in Python?",
+            "options": ["[x for x in range(5)]", "for x in range(5): [x]", "range(5)[x]", "None of the above"],
+            "answer": "[x for x in range(5)]"
+        },
+        {
+            "question": "Which of the following is the correct way to create a set in Python?",
+            "options": ["set()", "[]", "{}", "()"],
+            "answer": "set()"
+        },
+        {
+            "question": "Which Python library is used for working with dataframes?",
+            "options": ["pandas", "numpy", "matplotlib", "scikit-learn"],
+            "answer": "pandas"
+        },
+        {
+            "question": "What does the 'continue' statement do in Python?",
+            "options": ["Skips the current iteration and continues to the next", "Exits the loop", "Pauses the loop", "None of the above"],
+            "answer": "Skips the current iteration and continues to the next"
+        },
+        {
+            "question": "What does the 'pass' statement do in Python?",
+            "options": ["Does nothing", "Terminates the loop", "Pauses the program", "None of the above"],
+            "answer": "Does nothing"
+        }
+    ],
+        "C": [
+            {
+                "question": "Which of the following is the correct syntax to declare a pointer in C?",
+                "options": ["pointer p;", "int *p;", "pointer int p;", "int p*;"],
+                "answer": "int *p;"
+            },
+            {
+                "question": "What is the size of an int in C?",
+                "options": ["2 bytes", "4 bytes", "8 bytes", "Depends on the compiler"],
+                "answer": "4 bytes"
+            },
+            {
+                "question": "Which function is used to allocate memory dynamically in C?",
+                "options": ["malloc()", "free()", "calloc()", "realloc()"],
+                "answer": "malloc()"
+            },
+            {
+                "question": "Which of the following is used to return multiple values from a function in C?",
+                "options": ["Array", "Pointer", "Structure", "Union"],
+                "answer": "Structure"
+            },
+            {
+                "question": "Which of the following is the correct syntax for a for loop in C?",
+                "options": ["for (int i = 0; i < 10; i++) {}", "for int i = 0 to 10 {}", "for (int i; i < 10; i++)", "for i in range(10)"],
+                "answer": "for (int i = 0; i < 10; i++) {}"
+            },
+            {
+                "question": "What is the default value of a static variable in C?",
+                "options": ["0", "null", "undefined", "garbage value"],
+                "answer": "0"
+            },
+            {
+                "question": "Which function is used to find the length of a string in C?",
+                "options": ["strlen()", "length()", "sizeof()", "strlength()"],
+                "answer": "strlen()"
+            },
+            {
+                "question": "Which header file is required to use the malloc() function?",
+                "options": ["stdio.h", "stdlib.h", "string.h", "math.h"],
+                "answer": "stdlib.h"
+            },
+            {
+                "question": "Which of the following is used to exit a program in C?",
+                "options": ["exit()", "quit()", "stop()", "return 0;"],
+                "answer": "exit()"
+            },
+            {
+                "question": "What is the difference between '==' and '=' in C?",
+                "options": ["'==' is an assignment operator, '=' is a comparison operator", "'==' is a comparison operator, '=' is an assignment operator", "'==' and '=' are the same", "'==' is used in functions"],
+                "answer": "'==' is a comparison operator, '=' is an assignment operator"
+            },
+            {
+                "question": "Which of the following is a valid pointer declaration in C?",
+                "options": ["int *ptr;", "pointer int ptr;", "int ptr;", "pointer ptr;"],
+                "answer": "int *ptr;"
+            },
+            {
+                "question": "Which function is used to open a file in C?",
+                "options": ["open()", "fopen()", "fileopen()", "openFile()"],
+                "answer": "fopen()"
+            },
+            {
+                "question": "What is the correct syntax for declaring a structure in C?",
+                "options": ["struct myStruct {}", "structure myStruct {}", "struct { } myStruct;", "struct myStruct = { }"],
+                "answer": "struct myStruct {}"
+            },
+            {
+                "question": "Which of the following is used to free dynamically allocated memory in C?",
+                "options": ["free()", "delete()", "clear()", "deallocate()"],
+                "answer": "free()"
+            },
+            {
+                "question": "What does the 'const' keyword do in C?",
+                "options": ["Defines a constant value", "Defines a constant pointer", "Prevents a variable from being modified", "All of the above"],
+                "answer": "All of the above"
+            },
+            {
+                "question": "Which operator is used to access members of a structure in C?",
+                "options": [".", "->", "&", "*"],
+                "answer": "."
+            },
+            {
+                "question": "Which of the following is the correct syntax for a while loop in C?",
+                "options": ["while (condition) {}", "while condition {}", "while {} condition", "while : condition"],
+                "answer": "while (condition) {}"
+            },
+            {
+                "question": "What is the purpose of the 'break' statement in C?",
+                "options": ["Exits the current loop", "Terminates the program", "Pauses the loop", "None of the above"],
+                "answer": "Exits the current loop"
+            },
+            {
+                "question": "What is the output of the following code? printf('%d', 5 + 2 * 3);",
+                "options": ["11", "21", "15", "7"],
+                "answer": "11"
+            },
+            {
+                "question": "Which of the following is used to get the address of a variable in C?",
+                "options": ["&", "*", "#", "@@"],
+                "answer": "&"
+            }
+        ],
+            "C++": [
+                {
+                    "question": "Which of the following is used to declare a reference in C++?",
+                    "options": ["&", "*", "ref", "this"],
+                    "answer": "&"
+                },
+                {
+                    "question": "What is the correct way to declare a class in C++?",
+                    "options": ["class ClassName {}", "class: ClassName {}", "class {ClassName}", "class ClassName = {};"],
+                    "answer": "class ClassName {}"
+                },
+                {
+                    "question": "Which of the following is the base class of all classes in C++?",
+                    "options": ["Object", "Base", "std::Object", "None of the above"],
+                    "answer": "None of the above"
+                },
+                {
+                    "question": "Which keyword is used for inheritance in C++?",
+                    "options": ["extends", "super", "implements", "public"],
+                    "answer": "public"
+                },
+                {
+                    "question": "Which operator is used to define a pointer in C++?",
+                    "options": ["&", "*", "->", "::"],
+                    "answer": "*"
+                },
+                {
+                    "question": "Which of the following is a feature of object-oriented programming in C++?",
+                    "options": ["Encapsulation", "Polymorphism", "Inheritance", "All of the above"],
+                    "answer": "All of the above"
+                },
+                {
+                    "question": "What does the 'new' keyword do in C++?",
+                    "options": ["Allocates memory dynamically", "Deallocates memory", "Creates an object", "Declares a pointer"],
+                    "answer": "Allocates memory dynamically"
+                },
+                {
+                    "question": "Which function is used to deallocate memory allocated by 'new' in C++?",
+                    "options": ["delete", "free", "delete[]", "del"],
+                    "answer": "delete"
+                },
+                {
+                    "question": "What is the use of 'virtual' keyword in C++?",
+                    "options": ["To declare a class", "To create a constant", "To indicate polymorphism", "To define a constructor"],
+                    "answer": "To indicate polymorphism"
+                },
+                {
+                    "question": "Which of the following is a C++ container?",
+                    "options": ["vector", "list", "map", "All of the above"],
+                    "answer": "All of the above"
+                },
+                {
+                    "question": "What is the function of the 'this' pointer in C++?",
+                    "options": ["Points to the current object", "Points to the base class", "Points to the constructor", "Points to the last created object"],
+                    "answer": "Points to the current object"
+                },
+                {
+                    "question": "Which of the following is used to overload operators in C++?",
+                    "options": ["operator", "function", "method", "none of the above"],
+                    "answer": "operator"
+                },
+                {
+                    "question": "Which of the following is true about destructors in C++?",
+                    "options": ["They are called when the object is created", "They are called automatically when the object goes out of scope", "They are called when the object is copied", "None of the above"],
+                    "answer": "They are called automatically when the object goes out of scope"
+                },
+                {
+                    "question": "Which of the following is the default access modifier for members of a class in C++?",
+                    "options": ["public", "protected", "private", "None of the above"],
+                    "answer": "private"
+                },
+                {
+                    "question": "What is the syntax to define a default constructor in C++?",
+                    "options": ["ClassName()", "ConstructorName()", "default ClassName()", "None of the above"],
+                    "answer": "ClassName()"
+                },
+                {
+                    "question": "Which of the following is true about a static member of a class in C++?",
+                    "options": ["It is shared by all instances of the class", "It can only be accessed through an instance", "It can only be accessed inside a method", "None of the above"],
+                    "answer": "It is shared by all instances of the class"
+                },
+                {
+                    "question": "What is a pure virtual function in C++?",
+                    "options": ["A function that is not defined", "A function that must be overridden in a derived class", "A function that does not return anything", "A function with no parameters"],
+                    "answer": "A function that must be overridden in a derived class"
+                },
+                {
+                    "question": "What is the correct syntax to declare a constant in C++?",
+                    "options": ["const int x = 5;", "int const x = 5;", "constant int x = 5;", "const x = 5;"],
+                    "answer": "const int x = 5;"
+                },
+                {
+                    "question": "Which of the following types is used to represent text in C++?",
+                    "options": ["char", "string", "char[]", "string[]"],
+                    "answer": "string"
+                },
+                {
+                    "question": "What is the output of the following code snippet? cout << 5 + 2 * 3;",
+                    "options": ["11", "21", "7", "15"],
+                    "answer": "11"
+                },
+                {
+                    "question": "What is the purpose of the 'static' keyword in C++?",
+                    "options": ["To define a constant", "To create a static memory location", "To prevent function overriding", "To limit the scope of a variable"],
+                    "answer": "To limit the scope of a variable"
+                },
+                {
+                    "question": "Which of the following is used to implement exception handling in C++?",
+                    "options": ["try-catch", "throw-catch", "try-throw", "throw-try"],
+                    "answer": "try-catch"
+                }
+            ],
+            "DSA": [
+                {
+                    "question": "Which data structure is used for implementing a LIFO behavior?",
+                    "options": ["Queue", "Stack", "Heap", "Graph"],
+                    "answer": "Stack"
+                },
+                {
+                    "question": "What is the time complexity of inserting an element at the end of an array?",
+                    "options": ["O(1)", "O(n)", "O(log n)", "O(n^2)"],
+                    "answer": "O(1)"
+                },
+                {
+                    "question": "What is the worst-case time complexity of merge sort?",
+                    "options": ["O(n)", "O(n log n)", "O(log n)", "O(n^2)"],
+                    "answer": "O(n log n)"
+                },
+                {
+                    "question": "Which data structure is used to implement recursion internally?",
+                    "options": ["Queue", "Stack", "Heap", "Graph"],
+                    "answer": "Stack"
+                },
+                {
+                    "question": "What is the time complexity of searching in a balanced binary search tree?",
+                    "options": ["O(1)", "O(log n)", "O(n)", "O(n log n)"],
+                    "answer": "O(log n)"
+                },
+                {
+                    "question": "Which algorithm is used to find the shortest path in an unweighted graph?",
+                    "options": ["DFS", "BFS", "Dijkstra", "Kruskal"],
+                    "answer": "BFS"
+                },
+                {
+                    "question": "What is the time complexity of deleting an element in a max-heap?",
+                    "options": ["O(1)", "O(log n)", "O(n)", "O(n^2)"],
+                    "answer": "O(log n)"
+                },
+                {
+                    "question": "What is the average-case time complexity of hash table operations?",
+                    "options": ["O(1)", "O(log n)", "O(n)", "O(n^2)"],
+                    "answer": "O(1)"
+                },
+                {
+                    "question": "What is the worst-case time complexity of heap sort?",
+                    "options": ["O(n)", "O(log n)", "O(n log n)", "O(n^2)"],
+                    "answer": "O(n log n)"
+                },
+                {
+                    "question": "Which traversal method is used in Depth First Search (DFS)?",
+                    "options": ["Level order", "In-order", "Post-order", "Pre-order"],
+                    "answer": "Pre-order"
+                },
+                {
+                    "question": "What is the space complexity of BFS for a graph with 'V' vertices and 'E' edges?",
+                    "options": ["O(V + E)", "O(V^2)", "O(V)", "O(E)"],
+                    "answer": "O(V + E)"
+                },
+                {
+                    "question": "Which algorithm is used for detecting a cycle in a directed graph?",
+                    "options": ["Dijkstra", "Kruskal", "DFS", "BFS"],
+                    "answer": "DFS"
+                },
+                {
+                    "question": "What is the time complexity of finding the minimum spanning tree using Kruskal's algorithm?",
+                    "options": ["O(V^2)", "O(E log V)", "O(V log V)", "O(V + E)"],
+                    "answer": "O(E log V)"
+                },
+                {
+                    "question": "What is the height of a complete binary tree with 'n' nodes?",
+                    "options": ["log n", "n log n", "n/2", "2^n"],
+                    "answer": "log n"
+                },
+                {
+                    "question": "What is the best-case time complexity of bubble sort?",
+                    "options": ["O(n)", "O(n^2)", "O(log n)", "O(1)"],
+                    "answer": "O(n)"
+                },
+                {
+                    "question": "Which data structure is used to implement a priority queue?",
+                    "options": ["Stack", "Heap", "Queue", "Graph"],
+                    "answer": "Heap"
+                },
+                {
+                    "question": "What is the time complexity of merging two sorted arrays?",
+                    "options": ["O(1)", "O(n)", "O(log n)", "O(n log n)"],
+                    "answer": "O(n)"
+                },
+                {
+                    "question": "Which algorithm is used for finding strongly connected components in a graph?",
+                    "options": ["Kruskal", "Tarjan", "Dijkstra", "Prim"],
+                    "answer": "Tarjan"
+                },
+                {
+                    "question": "What is the auxiliary space required for in-order traversal of a binary tree?",
+                    "options": ["O(1)", "O(n)", "O(log n)", "O(n^2)"],
+                    "answer": "O(log n)"
+                },
+                {
+                    "question": "What is the time complexity of inserting an element in a red-black tree?",
+                    "options": ["O(1)", "O(log n)", "O(n)", "O(n log n)"],
+                    "answer": "O(log n)"
+                },
+                {
+                    "question": "What is the time complexity of union-find with path compression?",
+                    "options": ["O(1)", "O(log n)", "O(n)", "O(α(n))"],
+                    "answer": "O(α(n))"
+                },
+                {
+                    "question": "What is the time complexity of adding an edge in an adjacency list representation?",
+                    "options": ["O(1)", "O(n)", "O(log n)", "O(n^2)"],
+                    "answer": "O(1)"
+                },
+                {
+                    "question": "What is the best-case time complexity of insertion sort?",
+                    "options": ["O(1)", "O(n)", "O(n log n)", "O(n^2)"],
+                    "answer": "O(n)"
+                },
+                {
+                    "question": "Which algorithm is used to find the shortest path in a weighted graph?",
+                    "options": ["DFS", "Dijkstra", "BFS", "Kruskal"],
+                    "answer": "Dijkstra"
+                },
+                {
+                    "question": "What is the time complexity of binary search?",
+                    "options": ["O(1)", "O(n)", "O(log n)", "O(n^2)"],
+                    "answer": "O(log n)"
+                },
+                {
+                    "question": "What is the space complexity of quicksort?",
+                    "options": ["O(1)", "O(n)", "O(log n)", "O(n^2)"],
+                    "answer": "O(log n)"
+                },
+                {
+                    "question": "Which of the following is a linear data structure?",
+                    "options": ["Array", "Tree", "Graph", "None of the above"],
+                    "answer": "Array"
+                },
+                {
+                    "question": "What is the time complexity of bubble sort?",
+                    "options": ["O(n)", "O(n^2)", "O(log n)", "O(1)"],
+                    "answer": "O(n^2)"
+                },
+                {
+                    "question": "What is a stack data structure?",
+                    "options": ["FIFO", "LIFO", "Sorted list", "None of the above"],
+                    "answer": "LIFO"
+                },
+                {
+                    "question": "Which sorting algorithm has the best average case time complexity?",
+                    "options": ["QuickSort", "BubbleSort", "MergeSort", "InsertionSort"],
+                    "answer": "QuickSort"
+                },
+                {
+                    "question": "Which data structure is used in breadth-first search?",
+                    "options": ["Queue", "Stack", "Tree", "Linked List"],
+                    "answer": "Queue"
+                },
+                {
+                    "question": "What is a priority queue?",
+                    "options": ["A queue with FIFO order", "A queue with LIFO order", "A queue where each element is assigned a priority", "A queue with random order"],
+                    "answer": "A queue where each element is assigned a priority"
+                },
+                {
+                    "question": "What is the time complexity of insertion in an unsorted array?",
+                    "options": ["O(1)", "O(n)", "O(log n)", "O(n^2)"],
+                    "answer": "O(1)"
+                },
+                {
+                    "question": "Which of the following is a non-linear data structure?",
+                    "options": ["Linked List", "Array", "Tree", "Stack"],
+                    "answer": "Tree"
+                },
+                {
+                    "question": "What is the space complexity of merge sort?",
+                    "options": ["O(1)", "O(n)", "O(log n)", "O(n^2)"],
+                    "answer": "O(n)"
+                },
+                {
+                    "question": "Which of the following is a greedy algorithm?",
+                    "options": ["Dijkstra's algorithm", "Prim's algorithm", "Kruskall's algorithm", "All of the above"],
+                    "answer": "All of the above"
+                },
+                {
+                    "question": "What is the time complexity of searching in a balanced binary search tree?",
+                    "options": ["O(n)", "O(log n)", "O(n^2)", "O(1)"],
+                    "answer": "O(log n)"
+                },
+                {
+                    "question": "What is the purpose of the 'visited' array in DFS?",
+                    "options": ["To mark the nodes that have been visited", "To store the nodes to visit", "To calculate the shortest path", "To store the adjacency list"],
+                    "answer": "To mark the nodes that have been visited"
+                },
+                {
+                    "question": "What is a hash table used for?",
+                    "options": ["Sorting data", "Storing key-value pairs", "Implementing priority queues", "Graph traversal"],
+                    "answer": "Storing key-value pairs"
+                },
+                {
+                    "question": "What is the time complexity of accessing an element in an array?",
+                    "options": ["O(1)", "O(log n)", "O(n)", "O(n^2)"],
+                    "answer": "O(1)"
+                },
+                {
+                    "question": "Which of the following is a divide and conquer algorithm?",
+                    "options": ["MergeSort", "QuickSort", "Binary Search", "All of the above"],
+                    "answer": "All of the above"
+                },
+                {
+                    "question": "Which algorithm is used to find the shortest path in a graph?",
+                    "options": ["Dijkstra's algorithm", "Floyd-Warshall algorithm", "Bellman-Ford algorithm", "All of the above"],
+                    "answer": "All of the above"
+                },
+                {
+                    "question": "What is a graph?",
+                    "options": ["A set of nodes and edges", "A set of nodes", "A collection of elements", "None of the above"],
+                    "answer": "A set of nodes and edges"
+                },
+                {
+                    "question": "What is a heap data structure?",
+                    "options": ["A complete binary tree", "A tree with a specific order property", "A priority queue implementation", "All of the above"],
+                    "answer": "All of the above"
+                },
+                {
+                    "question": "Which of the following is true about quicksort?",
+                    "options": ["It has a worst-case time complexity of O(n^2)", "It is always faster than merge sort", "It has a space complexity of O(n)", "It requires additional space for sorting"],
+                    "answer": "It has a worst-case time complexity of O(n^2)"
+                },
+                {
+                    "question": "Which data structure is used in depth-first search (DFS)?",
+                    "options": ["Queue", "Stack", "Heap", "Array"],
+                    "answer": "Stack"
+                },
+                {
+                    "question": "What is the best case time complexity of quicksort?",
+                    "options": ["O(n^2)", "O(n log n)", "O(n)", "O(log n)"],
+                    "answer": "O(n log n)"
+                }
+            ],
+            "SQL": [
+                {
+                    "question": "Which SQL keyword is used to retrieve data from a database?",
+                    "options": ["GET", "SELECT", "FETCH", "RETRIEVE"],
+                    "answer": "SELECT"
+                },
+                {
+                    "question": "Which of the following is a valid SQL data type?",
+                    "options": ["VARCHAR", "STRING", "TEXT", "CHARACTER"],
+                    "answer": "VARCHAR"
+                },
+                {
+                    "question": "What is the purpose of the SQL JOIN clause?",
+                    "options": ["Combines rows from multiple tables", "Filters rows from a single table", "Sorts data", "Defines columns in a table"],
+                    "answer": "Combines rows from multiple tables"
+                },
+                {
+                    "question": "What is the correct syntax for a SELECT query in SQL?",
+                    "options": ["SELECT column_name FROM table_name;", "SELECT * FROM table_name;", "SELECT column_name;", "FROM table_name SELECT column_name;"],
+                    "answer": "SELECT * FROM table_name;"
+                },
+                {
+                    "question": "What does the SQL 'WHERE' clause do?",
+                    "options": ["Defines the order of results", "Filters rows based on a condition", "Groups rows", "Combines multiple tables"],
+                    "answer": "Filters rows based on a condition"
+                },
+                {
+                    "question": "Which of the following is used to delete data from a table in SQL?",
+                    "options": ["DELETE", "REMOVE", "DROP", "CLEAR"],
+                    "answer": "DELETE"
+                },
+                {
+                    "question": "What is the purpose of the 'GROUP BY' clause in SQL?",
+                    "options": ["To order results", "To group rows that share a property", "To filter rows", "To join tables"],
+                    "answer": "To group rows that share a property"
+                },
+                {
+                    "question": "Which SQL statement is used to update data in a table?",
+                    "options": ["UPDATE", "MODIFY", "CHANGE", "SET"],
+                    "answer": "UPDATE"
+                },
+                {
+                    "question": "What is the purpose of the 'HAVING' clause in SQL?",
+                    "options": ["To filter data after a GROUP BY", "To group data", "To filter data before a GROUP BY", "None of the above"],
+                    "answer": "To filter data after a GROUP BY"
+                },
+                {
+                    "question": "Which of the following is used to define a primary key in SQL?",
+                    "options": ["PRIMARY KEY", "UNIQUE KEY", "NOT NULL", "FOREIGN KEY"],
+                    "answer": "PRIMARY KEY"
+                },
+                {
+                    "question": "What is the default sort order of the 'ORDER BY' clause in SQL?",
+                    "options": ["Ascending", "Descending", "Unsorted", "Random"],
+                    "answer": "Ascending"
+                },
+                {
+                    "question": "What is the use of the SQL 'DISTINCT' keyword?",
+                    "options": ["Removes duplicates from results", "Orders results", "Limits rows", "Combines multiple tables"],
+                    "answer": "Removes duplicates from results"
+                },
+                {
+                    "question": "Which SQL keyword is used to sort the result-set in descending order?",
+                    "options": ["ORDER BY DESC", "SORT DESC", "BY DESC", "DESC ORDER BY"],
+                    "answer": "ORDER BY DESC"
+                },
+                {
+                    "question": "Which of the following SQL commands is used to create a table?",
+                    "options": ["CREATE TABLE", "ADD TABLE", "MAKE TABLE", "DEFINE TABLE"],
+                    "answer": "CREATE TABLE"
+                },
+                {
+                    "question": "Which SQL function is used to count the number of rows in a table?",
+                    "options": ["COUNT()", "TOTAL()", "SUM()", "NUM()"],
+                    "answer": "COUNT()"
+                },
+                {
+                    "question": "Which of the following is used to combine two tables based on a related column?",
+                    "options": ["JOIN", "MERGE", "COMBINE", "CONNECT"],
+                    "answer": "JOIN"
+                },
+                {
+                    "question": "Which of the following is a correct statement for creating an index in SQL?",
+                    "options": ["CREATE INDEX index_name ON table_name (column_name);", "CREATE TABLE index_name ON column_name;", "ADD INDEX index_name;", "None of the above"],
+                    "answer": "CREATE INDEX index_name ON table_name (column_name);"
+                },
+                {
+                    "question": "Which SQL clause is used to specify conditions for filtering rows?",
+                    "options": ["WHERE", "HAVING", "ORDER BY", "GROUP BY"],
+                    "answer": "WHERE"
+                },
+                {
+                    "question": "What does the SQL 'LIMIT' clause do?",
+                    "options": ["Limits the number of rows returned", "Limits the values in a column", "Limits the number of columns returned", "None of the above"],
+                    "answer": "Limits the number of rows returned"
+                },
+                {
+                    "question": "What is the default data type for a column in SQL if no data type is specified?",
+                    "options": ["VARCHAR", "TEXT", "INT", "NULL"],
+                    "answer": "NULL"
+                }
+            ],
+                "javascript": [
+                    {
+                        "question": "Which of the following is used to declare a variable in JavaScript?",
+                        "options": ["var", "let", "const", "All of the above"],
+                        "answer": "All of the above"
+                    },
+                    {
+                        "question": "What does `NaN` stand for in JavaScript?",
+                        "options": ["Not a Number", "Null and None", "Number and Null", "None of the Above"],
+                        "answer": "Not a Number"
+                    },
+                    {
+                        "question": "Which method is used to add a new element to an array in JavaScript?",
+                        "options": ["push()", "add()", "append()", "insert()"],
+                        "answer": "push()"
+                    },
+                    {
+                        "question": "How do you write a comment in JavaScript?",
+                        "options": ["<!-- comment -->", "// comment", "/* comment */", "// and /* */"],
+                        "answer": "// and /* */"
+                    },
+                    {
+                        "question": "What is the output of `console.log(typeof null)`?",
+                        "options": ["object", "null", "undefined", "string"],
+                        "answer": "object"
+                    },
+                    {
+                        "question": "Which symbol is used for strict equality in JavaScript?",
+                        "options": ["==", "===", "!=", "!=="],
+                        "answer": "==="
+                    },
+                    {
+                        "question": "What is the purpose of the `Array.prototype.map` method?",
+                        "options": [
+                            "To filter array elements",
+                            "To modify each element in an array and return a new array",
+                            "To combine all elements into a single string",
+                            "To remove elements from an array"
+                        ],
+                        "answer": "To modify each element in an array and return a new array"
+                    },
+                    {
+                        "question": "Which function is used to parse a string into a JSON object?",
+                        "options": ["JSON.stringify", "JSON.parse", "parseJSON", "stringifyJSON"],
+                        "answer": "JSON.parse"
+                    },
+                    {
+                        "question": "How do you create an object in JavaScript?",
+                        "options": [
+                            "let obj = {}",
+                            "let obj = []",
+                            "let obj = ()",
+                            "let obj = newObject()"
+                        ],
+                        "answer": "let obj = {}"
+                    },
+                    {
+                        "question": "What is the output of `console.log(2 + '2')`?",
+                        "options": ["4", "22", "Error", "NaN"],
+                        "answer": "22"
+                    },
+                    {
+                        "question": "How can you convert a string to an integer in JavaScript?",
+                        "options": ["parseInt()", "Number()", "Both", "None"],
+                        "answer": "Both"
+                    },
+                    {
+                        "question": "What is the keyword used to declare a constant variable?",
+                        "options": ["var", "let", "const", "constant"],
+                        "answer": "const"
+                    },
+                    {
+                        "question": "Which method can be used to find the length of a string?",
+                        "options": [".length()", ".size()", ".length", ".count()"],
+                        "answer": ".length"
+                    },
+                    {
+                        "question": "What will `console.log(1 == '1')` output?",
+                        "options": ["true", "false", "undefined", "Error"],
+                        "answer": "true"
+                    },
+                    {
+                        "question": "What is the output of `console.log(typeof [])`?",
+                        "options": ["array", "object", "undefined", "function"],
+                        "answer": "object"
+                    },
+                    {
+                        "question": "Which loop will execute at least once?",
+                        "options": ["for loop", "while loop", "do-while loop", "None of the above"],
+                        "answer": "do-while loop"
+                    },
+                    {
+                        "question": "How can you stop a loop in JavaScript?",
+                        "options": ["stop", "exit", "break", "return"],
+                        "answer": "break"
+                    },
+                    {
+                        "question": "What is the purpose of `this` keyword in JavaScript?",
+                        "options": [
+                            "It refers to the previous object",
+                            "It refers to the current object",
+                            "It refers to the global object",
+                            "It refers to the parent object"
+                        ],
+                        "answer": "It refers to the current object"
+                    },
+                    {
+                        "question": "Which of these methods can be used to copy an array?",
+                        "options": ["Array.copy()", "arr.slice()", "arr.clone()", "arr.duplicate()"],
+                        "answer": "arr.slice()"
+                    },
+                    {
+                        "question": "What will `console.log(!!0)` output?",
+                        "options": ["true", "false", "undefined", "Error"],
+                        "answer": "false"
+                    },
+                    {
+                        "question": "What is the default value of a declared variable without initialization?",
+                        "options": ["null", "0", "undefined", "NaN"],
+                        "answer": "undefined"
+                    },
+                    {
+                        "question": "Which operator checks both value and type?",
+                        "options": ["==", "===", "!=", "!=="],
+                        "answer": "==="
+                    },
+                    {
+                        "question": "What does `isNaN('5')` return?",
+                        "options": ["true", "false", "undefined", "NaN"],
+                        "answer": "false"
+                    },
+                    {
+                        "question": "How can you convert an array to a string?",
+                        "options": ["toString()", "join()", "Both", "None"],
+                        "answer": "Both"
+                    },
+                    {
+                        "question": "What does `JSON.stringify` do?",
+                        "options": [
+                            "Converts a string to JSON",
+                            "Converts a JSON object to string",
+                            "Parses JSON",
+                            "None of the above"
+                        ],
+                        "answer": "Converts a JSON object to string"
+                    },
+                    {
+                        "question": "What is the use of `let` in JavaScript?",
+                        "options": [
+                            "Declare a global variable",
+                            "Declare a block-scoped variable",
+                            "Declare a constant",
+                            "Declare a function"
+                        ],
+                        "answer": "Declare a block-scoped variable"
+                    },
+                    {
+                        "question": "How do you check if a variable is `null`?",
+                        "options": ["typeof variable == 'null'", "variable === null", "variable == null", "typeof variable === 'object'"],
+                        "answer": "variable === null"
+                    }
+                ],            
+                    "CSS": [
+                        {
+                            "question": "Which CSS property is used to change the text color?",
+                            "options": ["color", "font-color", "text-color", "background-color"],
+                            "answer": "color"
+                        },
+                        {
+                            "question": "Which property is used to change the background color of an element in CSS?",
+                            "options": ["background-color", "background", "color", "bg-color"],
+                            "answer": "background-color"
+                        },
+                        {
+                            "question": "What does the CSS 'box-sizing' property do?",
+                            "options": ["Defines how the width and height of an element are calculated", "Changes the size of the text inside an element", "Controls the padding of an element", "Sets the margin of an element"],
+                            "answer": "Defines how the width and height of an element are calculated"
+                        },
+                        {
+                            "question": "Which CSS property controls the layout of columns in a multi-column layout?",
+                            "options": ["column-count", "columns", "multi-columns", "column-layout"],
+                            "answer": "column-count"
+                        },
+                        {
+                            "question": "Which of the following is a valid CSS selector for targeting an element with an ID of 'header'?",
+                            "options": ["#header", ".header", "header", "header#"],
+                            "answer": "#header"
+                        },
+                        {
+                            "question": "Which of the following is used to change the font style in CSS?",
+                            "options": ["font-style", "text-style", "font-family", "text-family"],
+                            "answer": "font-style"
+                        },
+                        {
+                            "question": "Which of the following CSS properties is used to set the space between words?",
+                            "options": ["letter-spacing", "word-spacing", "line-height", "word-indent"],
+                            "answer": "word-spacing"
+                        },
+                        {
+                            "question": "How do you make a background image repeat in CSS?",
+                            "options": ["background-repeat: repeat;", "background-image: repeat;", "background: repeat;", "repeat: true;"],
+                            "answer": "background-repeat: repeat;"
+                        },
+                        {
+                            "question": "Which of the following is used to create a flexible layout in CSS?",
+                            "options": ["flexbox", "grid", "float", "block"],
+                            "answer": "flexbox"
+                        },
+                        {
+                            "question": "Which CSS property is used to specify the space between an element's border and content?",
+                            "options": ["padding", "margin", "border-spacing", "spacing"],
+                            "answer": "padding"
+                        },
+                        {
+                            "question": "Which of the following CSS properties is used to control the visibility of an element?",
+                            "options": ["visibility", "display", "opacity", "color"],
+                            "answer": "visibility"
+                        },
+                        {
+                            "question": "What does the CSS 'z-index' property do?",
+                            "options": ["Controls the stacking order of elements", "Changes the font size of an element", "Defines the visibility of an element", "Sets the opacity of an element"],
+                            "answer": "Controls the stacking order of elements"
+                        },
+                        {
+                            "question": "Which of the following is used to specify the width of a border in CSS?",
+                            "options": ["border-width", "border-size", "border-style", "width"],
+                            "answer": "border-width"
+                        },
+                        {
+                            "question": "What is the default value of the 'position' property in CSS?",
+                            "options": ["static", "relative", "absolute", "fixed"],
+                            "answer": "static"
+                        },
+                        {
+                            "question": "How do you create a responsive web design using CSS?",
+                            "options": ["Using media queries", "Using flexbox", "Using grid layout", "All of the above"],
+                            "answer": "All of the above"
+                        },
+                        {
+                            "question": "Which of the following is used to apply a shadow effect to an element in CSS?",
+                            "options": ["box-shadow", "shadow-effect", "text-shadow", "all of the above"],
+                            "answer": "box-shadow"
+                        },
+                        {
+                            "question": "Which of the following CSS properties is used to set the font size?",
+                            "options": ["font-size", "text-size", "size", "text-font"],
+                            "answer": "font-size"
+                        },
+                        {
+                            "question": "Which of the following properties is used to change the display behavior of an element in CSS?",
+                            "options": ["display", "visibility", "position", "float"],
+                            "answer": "display"
+                        },
+                        {
+                            "question": "How do you center an element horizontally in CSS?",
+                            "options": ["margin: 0 auto;", "center: true;", "align: center;", "margin: center;"],
+                            "answer": "margin: 0 auto;"
+                        },
+                        {
+                            "question": "Which CSS property is used to create a hover effect on links?",
+                            "options": [":hover", ":focus", ":active", ":link"],
+                            "answer": ":hover"
+                        }
+                    ],
+                                   
+                "RandomTechnical": [
+                    {
+                        "question": "What does the term 'cloud computing' refer to?",
+                        "options": ["Storing and accessing data over the internet", "A method of backup storage", "A type of local server", "All of the above"],
+                        "answer": "Storing and accessing data over the internet"
+                    },
+                    {
+                        "question": "Which of the following is a version control system?",
+                        "options": ["Git", "Apache", "Docker", "Nginx"],
+                        "answer": "Git"
+                    },
+                    {
+                        "question": "What is the purpose of an API?",
+                        "options": ["To interact with hardware", "To store data", "To allow software components to communicate", "To deploy applications"],
+                        "answer": "To allow software components to communicate"
+                    },
+                    {
+                        "question": "What is the function of a firewall in networking?",
+                        "options": ["To block unauthorized access", "To route data packets", "To encrypt data", "To compress data"],
+                        "answer": "To block unauthorized access"
+                    },
+                    {
+                        "question": "Which of the following is an example of a NoSQL database?",
+                        "options": ["MongoDB", "MySQL", "Oracle", "PostgreSQL"],
+                        "answer": "MongoDB"
+                    },
+                    {
+                        "question": "What is the purpose of containerization in DevOps?",
+                        "options": ["To deploy applications in isolated environments", "To store data in cloud servers", "To manage version control", "To optimize CPU usage"],
+                        "answer": "To deploy applications in isolated environments"
+                    },
+                    {
+                        "question": "Which of the following protocols is used for secure communication over the internet?",
+                        "options": ["HTTPS", "HTTP", "FTP", "SMTP"],
+                        "answer": "HTTPS"
+                    },
+                    {
+                        "question": "Which of the following is an example of an operating system?",
+                        "options": ["Linux", "Windows", "macOS", "All of the above"],
+                        "answer": "All of the above"
+                    },
+                    {
+                        "question": "Which of the following is a valid cloud service provider?",
+                        "options": ["Amazon Web Services", "Google Cloud", "Microsoft Azure", "All of the above"],
+                        "answer": "All of the above"
+                    },
+                    {
+                        "question": "Which of the following is used to style web pages?",
+                        "options": ["CSS", "HTML", "JavaScript", "None of the above"],
+                        "answer": "CSS"
+                    },
+                    {
+                        "question": "What does the term 'Big Data' refer to?",
+                        "options": ["Massive volumes of structured and unstructured data", "A type of database", "A network protocol", "A storage medium"],
+                        "answer": "Massive volumes of structured and unstructured data"
+                    },
+                    {
+                        "question": "Which of the following is an example of a machine learning framework?",
+                        "options": ["TensorFlow", "PyTorch", "scikit-learn", "All of the above"],
+                        "answer": "All of the above"
+                    },
+                    {
+                        "question": "Which of the following is an example of a version control hosting platform?",
+                        "options": ["GitHub", "Jira", "DockerHub", "Slack"],
+                        "answer": "GitHub"
+                    },
+                    {
+                        "question": "Which of the following is a commonly used programming language for web development?",
+                        "options": ["Python", "JavaScript", "Java", "All of the above"],
+                        "answer": "All of the above"
+                    },
+                    {
+                        "question": "Which of the following is used to deploy web applications?",
+                        "options": ["Heroku", "AWS Lambda", "Netlify", "All of the above"],
+                        "answer": "All of the above"
+                    },
+                    {
+                        "question": "What is continuous integration in DevOps?",
+                        "options": ["The practice of merging code changes frequently", "The practice of deploying applications continuously", "The practice of managing infrastructure", "None of the above"],
+                        "answer": "The practice of merging code changes frequently"
+                    },
+                    {
+                        "question": "Which of the following is used for creating databases?",
+                        "options": ["SQL", "MongoDB", "SQLite", "All of the above"],
+                        "answer": "All of the above"
+                    }
+                ]            
+        }
+        

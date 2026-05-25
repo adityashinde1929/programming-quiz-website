@@ -1,0 +1,164 @@
+/* General reset and styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Full-page gradient background */
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #0033ff, #04ffea);
+}
+
+/* Container styling */
+.container {
+    background: #fff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Logo header styling */
+.logo {
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.logo-image {
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+}
+
+/* Input box styling */
+.input-box {
+    position: relative;
+    margin: 20px 0;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    font-size: 16px;
+}
+
+.input-box label {
+    position: absolute;
+    top: -8px;
+    left: 12px;
+    background: #fff;
+    padding: 0 5px;
+    font-size: 14px;
+    color: #000000;
+}
+
+.input-box .icon {
+    position: absolute;
+    top: 50%;
+    right: 12px;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: #4c00ff;
+    cursor: pointer;
+}
+
+/* Button styling */
+.btn {
+    width: 100%;
+    background: #04ead6;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background: #556bb7;
+}
+
+/* Remember Me and Forgot Password */
+.remember-forget {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.remember-forget a {
+    color: #4c00ff;
+    text-decoration: none;
+}
+
+.remember-forget a:hover {
+    text-decoration: underline;
+}
+
+/* Login/Register Link */
+.login-register {
+    margin-top: 15px;
+}
+
+/* Social Media Links */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.social-icons a {
+    color: #4c00ff;
+    font-size: 24px;
+    text-decoration: none;
+    cursor: pointer;
+    pointer-events: auto;
+}
+
+.social-icons a i {
+    font-size: 24px !important;
+    color: inherit;
+    pointer-events: auto;
+    cursor: pointer;
+}
+
+.social-icons a:hover {
+    color: #556bb7;
+}
+
+/* Error Message */
+#error-message {
+    color: red;
+    display: none;
+    margin-bottom: 20px;
+}
+
+/* Success Message */
+#success-message {
+    color: green;
+    display: none;
+    margin-bottom: 20px;
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+}
